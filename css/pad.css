@@ -1,0 +1,1319 @@
+html {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+}
+.menuCtx {
+  display: none;
+}
+.headervideo {
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+  right: 0;
+  /**.logo_info {
+        top: 130px;
+        width: 90%;
+        left: 5%;
+        margin: 0;
+        bottom: auto!important;
+        text-align: center!important;
+        dt {
+            font-size: 22px;
+            text-align: center!important;
+            img {
+                display: block!important;
+                width: 80px;
+                margin: 0 auto;
+            }
+        }
+        .worda,
+        .wordb {
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center!important;
+        }
+    }
+
+    .taskCtx {
+        top: 330px;
+        width: 90%;
+        left: 5%;
+        margin: 0;
+        bottom: auto!important;
+        text-align: center!important;
+        height: 45px;
+        line-height: 45px;
+        .getITC {
+            position: relative;
+            width: 210px;
+            height: 100%;
+            color: white;
+            font-size: 25px;
+            letter-spacing: 1.2px;
+            outline: none;
+            // background: repeating-linear-gradient(135deg, #00f6d6, #00deff, #00adfd, #0089d7, #006ed4, #0960d5, #0960d5, #006ed4, #0089d7, #00adfd, #00deff, #00f6d6);
+            background: repeating-linear-gradient(135deg,#6bfaff,#00f3f6,#00deff,#00cafd,#00b9fd,#0089d7,#0065d7,#0050d4,#003acc,#0027ce,#003acc,#0050d4,#0065d7,#0089d7,#00b9fd,#00cafd,#00deff,#00f3f6,#6bfaff,#00f3f6,#00deff,#00cafd,#00b9fd,#0089d7,#0065d7,#0050d4,#003acc,#0027ce);
+            background-size: 1000% 1000%;
+            animation: 'myslide' 8s infinite linear both;
+            -moz-animation: 'myslide' 8s infinite linear both;
+            -webkit-animation: 'myslide' 8s infinite linear both;
+            -o-animation: 'myslide' 8s infinite linear both;
+        }
+
+        .border {
+            border: 0.5px solid;
+            border-radius: 22.5px;
+            border-color: transparent;
+        }
+    
+        @keyframes myslide {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 75% 60%;
+            }
+        }
+    }**/
+}
+.headervideo .topVideoBox {
+  width: 100%;
+  font-size: 0;
+  margin: 50px auto 0;
+  background: #000;
+}
+.headervideo .topVideoBox .topVideo {
+  width: 100%;
+  padding-bottom: 45%;
+  margin: 0 auto;
+  background-image: url('../imgs/mainnet_launch.jpg');
+  background-size: 100% 100%;
+}
+.headervideo canvas {
+  margin-left: 100px;
+}
+.headervideo .top .topbg {
+  position: fixed;
+  z-index: 99999;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 32, 55, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+}
+.headervideo .top {
+  width: 90%;
+  margin: 0 auto;
+}
+.headervideo .top h1 {
+  width: 114px;
+}
+.headervideo .top h1 img {
+  width: 100%;
+}
+.headervideo .top .langmenu {
+  display: block;
+  overflow: hidden;
+  float: right;
+}
+.headervideo .top .langmenu span {
+  width: 23px;
+  margin-left: 20px;
+  float: left;
+}
+.headervideo .top .langmenu span img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.headervideo .top ul {
+  display: none;
+  top: 50px;
+  z-index: 999;
+  left: 0;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  background: rgba(6, 50, 74, 0.9);
+  width: 100%;
+}
+.headervideo .top ul li {
+  float: none;
+  display: block;
+}
+.headervideo .top ul li a {
+  padding: 10px 0;
+  text-align: left;
+  text-indent: 40px;
+  background: url(../imgs/blueline.png) bottom left no-repeat;
+  background-size: 100% auto;
+}
+.headervideo .top ul li span {
+  display: none;
+}
+.headervideo .top .showmenu {
+  display: block!important;
+}
+.headervideo .wallet {
+  width: 100%;
+  height: 2050px;
+  background-color: #0094ff;
+}
+.headervideo .wallet .topView {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-size: 0;
+}
+.headervideo .wallet .topView .halfContext {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad {
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 20px auto 0;
+  background-color: #fafbfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad .descriptItemBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  height: 120px;
+  width: 50%;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad .descriptItemBox .descriptIcon {
+  width: 64px;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad .descriptItemBox .descriptContentBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad .descriptItemBox .descriptContentBox .descriptTitle {
+  color: #405ca7;
+  font-size: 15px;
+  font-weight: 500;
+}
+.headervideo .wallet .topView .halfContext .descriptBoxPad .descriptItemBox .descriptContentBox .descriptContent {
+  color: #434343;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 18px;
+}
+.headervideo .wallet .topView .rightHalf {
+  display: none;
+}
+.headervideo .wallet .topView .leftHalf {
+  display: block;
+}
+.headervideo .wallet .topView .stepOne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.headervideo .wallet .topView .stepOne .descriptBox {
+  display: none;
+}
+.headervideo .wallet .topView .stepOne .downloadDes {
+  position: relative;
+  top: 150px;
+  right: 0px;
+  margin: 0 auto 0;
+  width: 80%;
+  height: 200px;
+}
+.headervideo .wallet .topView .stepOne .downloadDes .walletTitle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: repeating-linear-gradient(135deg, #015ba0, #005ca1, #005384, #004769, #004560, #005a79, #00789f, #007397, #006391, #01598b, #015c98);
+  background-size: 300% 300%;
+  animation: 'walletslide' 3s infinite linear both;
+  -moz-animation: 'walletslide' 3s infinite linear both;
+  -webkit-animation: 'walletslide' 3s infinite linear both;
+  -o-animation: 'walletslide' 3s infinite linear both;
+}
+@keyframes walletslide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.headervideo .wallet .topView .stepOne .downloadDes .walletDes {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #959595;
+}
+.headervideo .wallet .topView .stepOne .downloadDes .testWarn {
+  position: relative;
+  display: block;
+  top: 50px;
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #959595;
+}
+.headervideo .wallet .topView .stepOne .downloadDes .iosDwonload {
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  left: 50%;
+  margin-left: -230px;
+  width: 220px;
+  height: 70px;
+  background: url(../imgs/ios_download.png) no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+.headervideo .wallet .topView .stepOne .downloadDes .androidDownload {
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  left: 50%;
+  margin-left: 10px;
+  width: 220px;
+  height: 70px;
+  background: url(../imgs/android_download.png) no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+.headervideo .wallet .topView .stepOne .setpOneLeftContext {
+  position: relative;
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: 290px auto 0;
+}
+.headervideo .wallet .topView .stepOne .setpOneLeftIcon {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.headervideo .wallet .topView .stepOne .stepOneRight {
+  position: relative;
+  display: block;
+  left: 80px;
+  top: 200px;
+  width: 465px;
+  height: 327px;
+  background-color: #000000;
+}
+.headervideo .wallet .topView .stepOne .iosDownloadDes {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  margin: 60px auto 0;
+  width: 500px;
+  height: 220px;
+  background-color: #f2faff;
+}
+.headervideo .wallet .topView .stepOne .androidDownloadDes {
+  position: relative;
+  top: 0px;
+  margin: 0 auto 0;
+  width: 500px;
+  height: 220px;
+  background-color: #f2faff;
+}
+.headervideo .wallet .topView .stepOne .guide {
+  position: relative;
+  display: block;
+  top: 30px;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  color: #1397ff;
+  font-size: 18px;
+}
+.headervideo .wallet .topView .stepOne .guideDes {
+  position: relative;
+  display: block;
+  top: 20px;
+  width: 90%;
+  height: auto;
+  line-height: 25px;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  color: #585858;
+}
+.headervideo .wallet .topView .stepOne .guideDes span {
+  color: #1397ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.headervideo .wallet .topView .stepTwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: yellow;
+}
+.headervideo .wallet .topView .stepTwo .applyDes {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  margin: 0 0 0 -300px;
+  width: 520px;
+  height: 150px;
+}
+.headervideo .wallet .topView .stepTwo .applyDes .walletTitle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: repeating-linear-gradient(135deg, #015ba0, #005ca1, #005384, #004769, #004560, #005a79, #00789f, #007397, #006391, #01598b, #015c98);
+  background-size: 300% 300%;
+  animation: 'walletslide' 3s infinite linear both;
+  -moz-animation: 'walletslide' 3s infinite linear both;
+  -webkit-animation: 'walletslide' 3s infinite linear both;
+  -o-animation: 'walletslide' 3s infinite linear both;
+}
+@keyframes walletslide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.headervideo .wallet .topView .stepTwo .applyDes .walletDes {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #959595;
+}
+.headervideo .wallet .topView .stepTwo .applyDes .stepTwoLeft {
+  position: relative;
+  display: block;
+  right: 120px;
+  top: 50px;
+  width: 555px;
+  height: 242px;
+}
+.headervideo .wallet .topView .stepTwo .applyform {
+  position: relative;
+  top: 50%;
+  margin: -210px 0 0 100px;
+  width: 414px;
+  height: 470px;
+  box-shadow: 0px 0px 5px 2px #f0f0f0;
+}
+.headervideo .wallet .topView .stepTwo .applyform .applyIcon {
+  position: relative;
+  display: block;
+  top: 15px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+.headervideo .wallet .topView .stepTwo .applyform .form {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  top: 30px;
+  margin: 0 auto 0;
+}
+.headervideo .wallet .topView .stepTwo .applyform .form .fieldTitle {
+  position: relative;
+  display: block;
+  margin: 10px auto 0;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  color: #9d9d9d;
+  font-weight: 300;
+}
+.headervideo .wallet .topView .stepTwo .applyform .form .field {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 35px;
+  background-color: #eeeeee;
+  margin: 10px auto 0;
+  font-size: 18px;
+  padding: 0 15px 0 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  outline: none;
+}
+.headervideo .wallet .topView .stepTwo .applyform .joinTest {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 45px;
+  color: white;
+  font-size: 18px;
+  margin: 10px auto 0;
+  background: repeating-linear-gradient(135deg, #64ccff, #55c4ff, #45bbff, #36b3ff, #28aaff, #1fa5ff, #139fff, #0e9cff, #0898ff, #0194ff);
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  outline: none;
+}
+.headervideo .wallet .topView .stepThree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.headervideo .wallet .topView .stepThree .applyDes {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  margin: 0 0 0 -300px;
+  width: 520px;
+  height: 150px;
+}
+.headervideo .wallet .topView .stepThree .applyDes .walletTitle {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: repeating-linear-gradient(135deg, #015ba0, #005ca1, #005384, #004769, #004560, #005a79, #00789f, #007397, #006391, #01598b, #015c98);
+  background-size: 300% 300%;
+  animation: 'walletslide' 3s infinite linear both;
+  -moz-animation: 'walletslide' 3s infinite linear both;
+  -webkit-animation: 'walletslide' 3s infinite linear both;
+  -o-animation: 'walletslide' 3s infinite linear both;
+}
+@keyframes walletslide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.headervideo .wallet .topView .stepThree .applyDes .walletDes {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #959595;
+}
+.headervideo .wallet .topView .stepThree .applyDes .stepTwoLeft {
+  position: relative;
+  display: block;
+  right: 120px;
+  top: 50px;
+  width: 555px;
+  height: 242px;
+}
+.headervideo .wallet .topView .stepThree .applyform {
+  position: relative;
+  top: 50%;
+  margin: -210px 0 0 100px;
+  width: 414px;
+  height: 470px;
+  box-shadow: 0px 0px 5px 2px #f0f0f0;
+}
+.headervideo .wallet .topView .stepThree .applyform .applyIcon {
+  position: relative;
+  display: block;
+  top: 130px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+.headervideo .wallet .topView .stepThree .applyform .form {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  top: 150px;
+  margin: 0 auto 0;
+}
+.headervideo .wallet .topView .stepThree .applyform .form .desOne {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #16a4f7;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+.headervideo .wallet .topView .stepThree .applyform .form .desTwo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #959595;
+  font-size: 15px;
+}
+.headervideo .wallet .topView .stepThree .applyform .form .appluSuccess {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 45px;
+  margin: 40px auto 0;
+}
+.headervideo .wallet .bottomView {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  font-size: 0;
+}
+.headervideo .wallet .bottomView .feature1 {
+  position: relative;
+  display: inline-block;
+  background-color: #f9fcfc;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+}
+.headervideo .wallet .bottomView .feature1 .leftIconContext {
+  position: absolute;
+  right: 430px;
+  top: 0px;
+  width: 200px;
+  height: 100%;
+}
+.headervideo .wallet .bottomView .feature1 .leftIconContext .f1Icon {
+  position: relative;
+  display: block;
+  top: 95px;
+}
+.headervideo .wallet .bottomView .feature1 .leftesContext {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 410px;
+  height: 100%;
+}
+.headervideo .wallet .bottomView .feature1 .leftesContext .desTtitle {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  top: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 36px;
+  color: #2957a5;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+.headervideo .wallet .bottomView .feature1 .leftesContext .desContent {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  top: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 1.2px;
+}
+.headervideo .wallet .bottomView .feature2 {
+  position: relative;
+  display: inline-block;
+  background-color: #848484;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+}
+.headervideo .wallet .bottomView .feature3 {
+  position: relative;
+  display: inline-block;
+  background-color: #9e2884;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+}
+.headervideo .wallet .bottomView .feature4 {
+  position: relative;
+  display: inline-block;
+  background-color: #28375f;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+}
+.ourvision {
+  height: 1500px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+.ourvision .mobvisionimg {
+  width: 70%;
+  margin: 0 15%;
+  z-index: 999;
+  position: relative;
+  display: block!important;
+}
+.ourvision .ourvisiontable {
+  display: none;
+}
+.ourvision .ourvisiontable2 {
+  display: block;
+  width: 90%;
+  margin: 7% 5% 10%;
+  overflow: hidden;
+}
+.ourvision .ourvisiontable2 .tdtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.ourvision .ourvisiontable2 .tr2 {
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.ourvision .ourvisiontable2 .tr2 img {
+  width: 30px;
+  margin-right: 15px;
+}
+.ourvision .ourvisiontable2 .tr2 .tdinfo {
+  line-height: 1.3;
+  padding-right: 2%;
+}
+.ourvision .ourvisiontable2 .tr2 td {
+  padding: 5px 0;
+}
+.ourvision .dl_01 {
+  overflow: hidden;
+  clear: both;
+}
+.ourvision .dl_01 dd {
+  float: left;
+  width: 100%;
+  padding-right: 0;
+  overflow: hidden;
+}
+.ourvision .dl_01 dd img {
+  float: left;
+  width: 30px;
+  display: block;
+}
+.ourvision .dl_01 dd span {
+  display: block;
+  line-height: 1.3;
+  margin-left: 50px;
+}
+.ourvision dl {
+  width: 90%;
+  padding: 7% 5% 80px;
+}
+.ourvision dl dt {
+  padding-bottom: 0px;
+  font-size: 18px;
+  padding-bottom: 5%;
+}
+.ourvision dl dd {
+  font-size: 14px;
+}
+.ourvision .ourvisionbottom .mobvisionimg {
+  width: 60%;
+  margin: 0 20%;
+  z-index: 999;
+  top: -40%;
+  position: absolute;
+}
+.ourvision .ourvisionbottom .ourvisonwrap {
+  background: #0480ab;
+  bottom: -2px;
+  height: 900px;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo {
+  width: 96%;
+  margin: 0 2%;
+  background: url(../imgs/sjx.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo .dagspan {
+  color: #fff;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  margin-left: -14px;
+  bottom: 8%;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo img {
+  float: none;
+  clear: both;
+  height: auto;
+  width: 70%;
+  margin: 30px 15% 0;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo dl {
+  float: none;
+  width: 90%;
+  padding: 0 5%;
+  padding-right: 0%!important;
+  padding-left: 0!important;
+  padding-top: 20px;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo dl dt {
+  text-transform: none;
+  padding-top: 30px;
+}
+.ourvision .ourvisionbottom .ourvisonwrap .imgboxinfo dl dd p {
+  line-height: 1.4!important;
+  font-size: 14px!important;
+}
+.ourvision .ourvisionbottom .ourimg {
+  width: 100%!important;
+  left: 0!important;
+  right: 0!important;
+  top: -60px !important;
+  margin-left: 0!important;
+  text-align: center;
+  display: none;
+}
+.ourvision .ourvisionbottom .ourimg img {
+  width: 96!important;
+  margin: 0 auto;
+}
+.whitepaper {
+  padding-top: 50px;
+  width: 100%;
+}
+.whitepaper .whitepapergroup {
+  width: 100%;
+}
+.whitepaper .whitepapertitle {
+  padding-top: 10px;
+}
+.whitepaper .whitepapertitle h2 {
+  font-size: 14px;
+}
+.whitepaper .icogroup .icogrouptitle {
+  padding: 50px 0 10px;
+}
+.whitepaper .icogroup .icogrouptitle strong {
+  font-size: 14px;
+}
+.whitepaper .icogroup dl {
+  height: auto;
+  padding-bottom: 10px;
+}
+.whitepaper .icogroup dl dt {
+  padding: 10px 0;
+}
+.whitepaper .icogroup dl dd {
+  display: none;
+}
+.whitepaper .icogroup dl dd strong {
+  font-size: 14px;
+  margin: 0 10px;
+}
+.whitepaper .icogroup dl dd .tp1 {
+  font-size: 13px;
+  margin: 0 10px;
+}
+.whitepaper .icogroup dl dd .tp2,
+.whitepaper .icogroup dl dd .tp3 {
+  font-size: 13px;
+}
+.whitepaper .icogroup dl .lmoreBox {
+  display: none;
+}
+.whitepaper .icogroup dl .mobshow {
+  display: block;
+}
+.whitepaper .icogroup dl .mobshow strong {
+  font-weight: bold;
+  font-size: 14px;
+}
+.whitepaper .whitepapergroup {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.whitepaper .whitepapergroup dl dt img {
+  width: 80%;
+}
+.whitepaper .whitepapergroup dl .whitepaperinfo strong {
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+.whitepaper .whitepapergroup dl .whitepaperinfo p {
+  font-size: 12px;
+}
+.whitepaper .whitepapergroup dl .whitepaperlinks {
+  padding: 0 0 10px 0;
+}
+.whitepaper .whitepapergroup dl .whitepaperlinks a {
+  display: block;
+  width: 80%;
+  font-size: 12px!important;
+  margin: 0 10% 10px;
+  height: 25px;
+  line-height: 25px;
+}
+.icogroup {
+  padding: 0 2%;
+  width: 96%!important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.icogroup dl {
+  width: 25%!important;
+}
+.icogroup dl dd {
+  padding-left: 10px!important;
+}
+.solution {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.solution .solutionItem {
+  padding-bottom: 20px;
+}
+.solution .solutionItem .soultiontitle {
+  width: 90%;
+  padding: 0 5%;
+}
+.solution .solutionItem .soultiontitle h3 {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 0 10px;
+}
+.solution .solutionItem .faqsinfo {
+  width: 90%;
+  padding: 0 5%;
+}
+.solution .solutionItem .faqsinfo .faqs {
+  width: 100%;
+  float: none;
+}
+.solution .solutionItem .faqsinfo .faqs .faqlist .problemList {
+  width: 90%;
+}
+.solution .solutionItem .faqsinfo .faqs .faqlist .problemList .faqd {
+  margin: 10px 100px 10px 20px;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+.solution .solutionItem .faqsinfo .faqs .faqlist .solutionList {
+  width: 90%;
+}
+.solution .solutionItem .faqsinfo .faqs .faqlist .solutionList .faqd {
+  margin: 10px 20px 10px 100px;
+  padding: 12px 20px;
+  font-size: 13px;
+}
+.solution .solutionItem .faqsinfo .faqs h4 {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.solution .solutionItem .faqsinfo .faqs .h4x,
+.solution .solutionItem .faqsinfo .faqs .h4x2 {
+  padding-top: 20px;
+}
+.timeline {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  display: block;
+  height: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.timeline .grouptitle {
+  margin: 0 auto 5px;
+  text-align: center;
+}
+.timeline .grouptitle strong {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  color: #004F87;
+}
+.timeline .grouptitle span {
+  margin: 0 auto;
+  display: block;
+  height: 15px;
+  width: 80px;
+  border-bottom: 1px solid #15ADFF;
+}
+.timeline .timeaxis {
+  height: auto;
+  position: relative;
+}
+.timeline .timeaxis .timezou {
+  display: block;
+  width: 60%;
+  margin: 0 20%;
+}
+.timeline .timeaxis .timebox {
+  display: none;
+  width: 50%;
+  border-right: 2px dotted #15ADFF;
+  height: 900px;
+  position: relative;
+}
+.timeline .timeaxis .timebox .axisbox {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+}
+.timeline .timeaxis .timebox .axisbox .circular {
+  height: inherit;
+}
+.timeline .timeaxis .timebox .axisbox .circular .circularinner {
+  width: 120px;
+  position: absolute;
+  height: 120px;
+  background: #E9F4FA;
+  border-radius: 50%;
+}
+.timeline .timeaxis .timebox .axisbox .circular .circularinner .circularwrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 110px;
+  padding-top: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  display: block;
+  background: #1D8FC5;
+}
+.timeline .timeaxis .timebox .axisbox .circular .circularinner .circularwrap p {
+  color: #fff;
+  font-size: 12px;
+}
+.timeline .timeaxis .timebox .axisbox_1 {
+  left: 100%;
+  top: 0px;
+}
+.timeline .timeaxis .timebox .axisbox_2 {
+  left: 0;
+  top: 120px;
+}
+.timeline .timeaxis .timebox .axisbox_3 {
+  left: 100%;
+  top: 220px;
+}
+.timeline .timeaxis .timebox .axisbox_4 {
+  left: 0;
+  top: 340px;
+}
+.timeline .timeaxis .timebox .axisbox_5 {
+  left: 100%;
+  top: 440px;
+}
+.timeline .timeaxis .timebox .axisbox_6 {
+  left: 0;
+  top: 560px;
+}
+.timeline .timeaxis .timebox .axisbox_7 {
+  left: 100%;
+  top: 660px;
+}
+.timeline .timeaxis .timebox .axisdata {
+  position: absolute;
+  width: 35%;
+  top: 40%;
+  z-index: 99;
+  height: 0px;
+  border-bottom: 1px solid #1D8FC5;
+}
+.timeline .timeaxis .timebox .axisdata .pore {
+  position: relative;
+}
+.timeline .timeaxis .timebox .axisdata .pore span {
+  position: absolute;
+  top: -5px;
+  left: -200%;
+  font-size: 12px;
+  text-indent: 7px;
+  font-weight: bold;
+}
+.timeline .timeaxis .timebox .axisdata:before {
+  position: absolute;
+  content: " ";
+  width: 14px;
+  height: 14px;
+  background: #1D8FC5;
+  border-radius: 50%;
+  z-index: 9;
+}
+.timeline .timeaxis .timebox .axisbox_1 .axisdata:before,
+.timeline .timeaxis .timebox .axisbox_3 .axisdata:before,
+.timeline .timeaxis .timebox .axisbox_5 .axisdata:before,
+.timeline .timeaxis .timebox .axisbox_7 .axisdata:before {
+  top: -7px;
+  left: -6px;
+}
+.timeline .timeaxis .timebox .axisbox_1 .circularinner,
+.timeline .timeaxis .timebox .axisbox_3 .circularinner,
+.timeline .timeaxis .timebox .axisbox_5 .circularinner,
+.timeline .timeaxis .timebox .axisbox_7 .circularinner {
+  left: 20%;
+}
+.timeline .timeaxis .timebox .axisbox_2 .axisdata,
+.timeline .timeaxis .timebox .axisbox_4 .axisdata,
+.timeline .timeaxis .timebox .axisbox_6 .axisdata {
+  right: 0;
+}
+.timeline .timeaxis .timebox .axisbox_2 .axisdata:before,
+.timeline .timeaxis .timebox .axisbox_4 .axisdata:before,
+.timeline .timeaxis .timebox .axisbox_6 .axisdata:before {
+  top: -7px;
+  right: -8px;
+}
+.timeline .timeaxis .timebox .axisbox_2 .circularinner,
+.timeline .timeaxis .timebox .axisbox_4 .circularinner,
+.timeline .timeaxis .timebox .axisbox_6 .circularinner {
+  right: 20%;
+}
+.timeline .timeaxis .timebox .axisbox_2 .circular .axisdata .pore span,
+.timeline .timeaxis .timebox .axisbox_4 .circular .axisdata .pore span,
+.timeline .timeaxis .timebox .axisbox_6 .circular .axisdata .pore span {
+  left: 160%!important;
+}
+.timeline .downico {
+  width: 22px;
+  height: 20px;
+  display: block;
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -11px;
+}
+.timeline .downico img {
+  display: block;
+  width: 100%;
+}
+.team {
+  width: 100%;
+  margin-bottom: 0!important;
+  overflow: hidden;
+}
+.team .teamtitle {
+  padding-bottom: 20px;
+}
+.team .teamtitle h5 {
+  font-size: 14px;
+  font-weight: bold!important;
+}
+.team .teamgroup {
+  width: 90%;
+  padding: 5%;
+}
+.team .teamgroup .teamli {
+  height: 300px;
+  width: 45%;
+  margin-right: 5%;
+  overflow: hidden;
+  padding: 0 0 30px 0;
+  float: left;
+}
+.team .teamgroup .teamli .teamheader img {
+  width: 30%;
+}
+.team .teamgroup .teamli .teamheader dl {
+  margin-left: 35%;
+}
+.team .teamgroup .teamli .teamheader dl dt {
+  overflow: hidden;
+}
+.team .teamgroup .teamli .teamheader dl dt span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+}
+.team .teamgroup .teamli .teamheader dl dt span a {
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  padding: 0;
+  font-weight: bold;
+  line-height: 25px;
+  display: block;
+}
+.team .teamgroup .teamli .teamheader dl dt span a img {
+  width: 20px;
+  margin: 4px 2px 2px 2px;
+  display: block;
+}
+.team .teamgroup .teamli .teamheader dl dt .twitterico a {
+  background: none;
+}
+.team .teamgroup .teamli .teamheader dl dt .twitterico a img {
+  margin-top: 3px;
+}
+.team .teamgroup .teamli .teaminfo {
+  line-height: 1.4;
+  float: none;
+  padding-top: 10px;
+}
+.team.team2 {
+  margin-top: 0px;
+}
+.team.team2 dl {
+  padding-top: 20px;
+}
+.agency {
+  width: 96%;
+  padding: 0 2% 20px;
+}
+.agency .title {
+  padding-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.agency .agencyimglist {
+  padding: 0;
+  width: 100%;
+}
+.agency .agencyimglist a {
+  width: 33.333%;
+  padding: 0;
+  height: 60px;
+  text-align: center;
+}
+.agency .agencyimglist a img {
+  display: inline-block;
+  width: auto;
+  height: 70%!important;
+}
+.footer {
+  margin-top: 10px;
+  padding: 10px 0;
+  overflow: hidden;
+  height: 200px;
+}
+.footer .footercenter {
+  width: 100%;
+  padding-top: 0;
+}
+.footer .footercenter dl {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+.footer .footercenter dl dt {
+  font-size: 16px;
+}
+.footer .footercenter dl dd {
+  display: block;
+}
+.footer .footercenter dl dd input {
+  margin: 0px auto 0;
+}
+.footer .footercenter dl dd button {
+  margin: 10px auto 0;
+}
+.footer .footercenter .flinks {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer .footercenter .flinks div {
+  display: block;
+  height: 30px;
+}
+.footer .footercenter .flinks div a {
+  width: 20px;
+  display: inline-block;
+  float: none;
+  margin: 0 5px;
+}
+.footer .footercenter .flinks div a img {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+}
+.footer .footercenter .flinks .weixin {
+  position: relative;
+}
+.footer .footercenter .flinks .weixin .weixin2 {
+  position: absolute;
+  display: none;
+  width: 130px!important;
+  height: auto!important;
+  top: 40px;
+  left: 50%;
+  margin-left: -65px;
+  z-index: 99;
+}
+.footer .footercenter .flinks .weixin .weixin3 {
+  display: none;
+}
+.ceng {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+  background: #000;
+}
+.ceng img {
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}

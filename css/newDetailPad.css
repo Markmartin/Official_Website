@@ -1,0 +1,129 @@
+canvas {
+  margin-left: 100px;
+}
+.topmenu {
+  height: 50px;
+}
+.top .topbg {
+  position: fixed;
+  z-index: 99999;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 32, 55, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+}
+.top {
+  width: 90%;
+  margin: 0 auto;
+}
+.top h1 {
+  width: 130px;
+}
+.top h1 img {
+  width: 100%;
+  margin-top: 7px;
+}
+.top .topBack {
+  float: right;
+  top: 12px;
+  width: 80px;
+  height: 23px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 23px;
+}
+.top .topBack:hover {
+  cursor: pointer;
+}
+.footer {
+  margin-top: 10px;
+  padding: 10px 0;
+  overflow: hidden;
+  height: 200px;
+}
+.footer .footercenter {
+  width: 100%;
+  padding-top: 0;
+}
+.footer .footercenter dl {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+.footer .footercenter dl dt {
+  font-size: 16px;
+}
+.footer .footercenter dl dd {
+  display: block;
+}
+.footer .footercenter dl dd input {
+  margin: 0px auto 0;
+}
+.footer .footercenter dl dd button {
+  margin: 10px auto 0;
+}
+.footer .footercenter .flinks {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer .footercenter .flinks div {
+  display: block;
+  height: 30px;
+}
+.footer .footercenter .flinks div a {
+  width: 20px;
+  display: inline-block;
+  float: none;
+  margin: 0 5px;
+}
+.footer .footercenter .flinks div a img {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+}
+.footer .footercenter .flinks .weixin {
+  position: relative;
+}
+.footer .footercenter .flinks .weixin .weixin2 {
+  position: absolute;
+  display: none;
+  width: 130px!important;
+  height: auto!important;
+  top: 40px;
+  left: 50%;
+  margin-left: -65px;
+  z-index: 99;
+}
+.footer .footercenter .flinks .weixin .weixin3 {
+  display: none;
+}
+.ceng {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+  background: #000;
+}
+.ceng img {
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}

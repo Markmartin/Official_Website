@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118912394-1"></script>
+    <script>
+        window.opendataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-118912394-1');
+    </script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MD76WF5');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IoT Chain - A High-Security Lite IoT OS - ITC</title>
+    <meta name="description" content="IoT Chain is a secure, lite operating system for the Internet of Things. Using a hybrid approach of blockchain, Practical Byzantine Fault Tolerance (PBFT), and blockless Directed Acyclic Graph (DAG) architecture, ITC is able to create a decentralized IoT network with unparalleled speed and security that allows users to maintain their data sovereignty."
+    />
+    <meta name="keywords" content="IoT Chain, ITC" />
+    <link rel="stylesheet" type="text/css" href="css/root.css" />
+    <link rel="stylesheet" type="text/css" href="css/mob.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" type="text/css" href="css/pad.css" media="screen and (min-width:768px) and (max-width: 1023px)">
+    <script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>-->
+    <link rel="icon" href="titleLogo.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD76WF5" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+    <div id='m11'></div>
+    <!--顶部视频背景-->
+
+    <!-- <弹出菜单> -->
+    <div class="menuCtx">
+        <div class="telegram telegramFrame border" id="telegramMenu">
+            <label class="titleStyle titleBase">telegram</label>
+        </div>
+        <div class="twitter twitterFrame border" id="twitterMenu">
+            <label class="titleStyle titleBase">twitter</label>
+        </div>
+        <!--<div class="facebook facebookFrame border" id="facebookMenu">
+            <label class="titleStyle titleBase">facebook</label>
+        </div>-->
+        <div class="youtube youtubeFrame border" id="youtubeMenu">
+            <label class="titleStyle titleBase">youtube</label>
+        </div>
+        <div class="medium mediumFrame border" id="mediumMenu">
+            <label class="titleStyle titleBase">medium</label>
+        </div>
+        <div class="steemit steemitFrame border" id="steemitMenu">
+            <label class="titleStyle titleBase">steemit</label>
+        </div>
+    </div>
+    <!-- <弹出菜单> -->
+    <div class="headervideo" id="container">
+        <div class="topVideoBox">
+            <a href="https://medium.com/iot-chain/the-iot-chain-mainnet-launch-stage-observation-7248880d2f59" target="_blank">
+                <div class="topVideo"></div>
+            </a>
+            <!-- <video class="topVideo" id="topVideo" src="video/itc.mp4" poster="imgs/video_bg.jpg" playsinline='playsinline' webkit-playsinline="true" autoplay loop muted preload="auto"> 
+                   <source src="video/itc.mp4" type="video/mp4">
+                   <source src="video/itc.ogg" type="video/ogg">
+                   <source src="video/itc.webm" type="video/webm">
+            </video> -->
+        </div>
+        <div class="topmenu menubg">
+            <div class="top clearfix topbg">
+                <h1 class="animated fadeInLeft">
+                    <a href="">
+                        <img src="imgs/iot_logo.png" alt="" />
+                    </a>
+                </h1>
+                <div class="langmenu">
+                    <span onclick="window.location='korean.html'">
+                        <img src="imgs/ko.png" alt="" />
+                    </span>
+                    <span class="showmenu">
+                        <img src="imgs/menu.png" alt="" />
+                    </span>
+                </div>
+
+                <ul class="animated bounceInDown">
+                    <li>
+                        <a href="https://iotchain.io/wallet" target="_blank" class="hvr-underline-from-center">Wallet</a>
+                    </li>
+                    <li>
+                        <a href="https://iotchain.io/explorer" target="_blank" class="hvr-underline-from-center">Explorer</a>
+                    </li>
+                    <li>
+                        <a href="https://iotchain.io/news" class="hvr-underline-from-center" id="mNews">News</a>
+                    </li>
+                    <li>
+                        <a class="hvr-underline-from-center" id="m2">White Paper</a>
+                    </li>
+                    <!-- <li>
+                        <a href="javascript:void(0)" class="hvr-underline-from-center" id="m3">Solutions</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="hvr-underline-from-center" id="m4">Timeline</a>
+                    </li> -->
+                    <li>
+                        <a class="hvr-underline-from-center" id="m5">Team</a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://medium.com/iot-chain" target="_blank" class="hvr-underline-from-center">Medium</a>
+                    </li> -->
+                    <li>
+                        <a class="hvr-underline-from-center" id="m7">Contact Us</a>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:void(0)" class="hvr-underline-from-center" id="m8">Recruitment</a>
+                    </li>-->
+                    <li>
+                        <a href="https://bounty.iotchain.io/" target="_blank" class="hvr-underline-from-center" id="m9">Bounty</a>
+                    </li>
+                    <li>
+                        <span class="">
+                            <strong onclick="window.location='index.html'">English</strong>
+                            <em onclick="window.location='korean.html'">한국어</em>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--<dl class="logo_info">
+            <dt class="animated zoomInDown">
+				<img src="imgs/logobig_03.png" />
+			</dt>
+            <dt class="animated zoomInDown">
+				IoT Chain
+			</dt>
+            <dd class="animated zoomInUp worda">
+                A
+                <em>HIGH-SECURITY</em>
+            </dd>
+            <dd class="animated zoomInUp wordb">
+                LITE IoT OS
+            </dd>
+        </dl>
+
+        <div class="taskCtx animated zoomInDown wordb">
+            <button class="getITC border " id="getITC">Get Free ITC</button>
+        </div>-->
+    </div>
+
+
+
+
+    <!--愿景-->
+    <div class="ourvision">
+        <table class="ourvisiontable animated bounceInLeft">
+            <tr>
+                <td colspan="8" class="tdtitle">Our Vision</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/safeico.png" alt="" />
+                </td>
+                <td class="tdinfo">To implement impenetrable security in our Internet of Things network</td>
+                <td>
+                    <img src="imgs/dataico.png" alt="" />
+                </td>
+                <td class="tdinfo">To give control of data back to its rightful owner</td>
+                <td>
+                    <img src="imgs/speedico.png" alt="" />
+                </td>
+                <td class="tdinfo">To provide unparalleled stability and speed for data transfer</td>
+                <td>
+                    <img src="imgs/intelligence.png" alt="" />
+                </td>
+                <td class="tdinfo">To promote the development of artificial intelligence through user data</td>
+            </tr>
+        </table>
+        <table class="ourvisiontable2 animated bounceInLeft">
+            <tr>
+                <td colspan="8" class="tdtitle">Our Vision</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/safeico.png" alt="" />
+                </td>
+                <td class="tdinfo">To implement impenetrable security in our Internet of Things network</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/dataico.png" alt="" />
+                </td>
+                <td class="tdinfo">To give control of data back to its rightful owner</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/speedico.png" alt="" />
+                </td>
+                <td class="tdinfo">To provide unparalleled stability and speed for data transfer</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/intelligence.png" alt="" />
+                </td>
+                <td class="tdinfo">To promote the development of artificial intelligence through user data</td>
+            </tr>
+        </table>
+
+        <div class="ourvisionbottom">
+            <img src="imgs/cengx.png" class="mobvisionimg" />
+            <div class="ourvisonwrap">
+                <div class="imgboxinfo clearfix">
+                    <dl class="imginfo animated fadeInRight">
+                        <dt>IoT Chain</dt>
+                        <dd>
+                            <p>IoT Chain (ITC) is developed as a lite operating system using the blockchain concept and implementing VRF+BFT, DAG and SPV technology, allowing data to be layered and stored in a decentralized manner and providing protection
+                                with the combined strength of the millions of IoT nodes within the network.</p>
+                        </dd>
+                        <dd>
+                            <p>The technology will result in an economy of sharing for Internet of Things (IoT) devices in a decentralized and energy efficient environment while producing a wealth of valuable user data which can be used as fuel for the development
+                                of AI with users rewarded for providing this fuel.</p>
+                        </dd>
+                        <dd>
+                            <p>Under this network, the interconnection of IoT devices of a home, a business or even a city can truly flourish without worry of transfer congestion, malicious attacks or losing privacy.</p>
+                        </dd>
+                        <dd>
+                            <p>The implementation and monetization of ITC is not just a concept but has very real applications in the near future.</p>
+                        </dd>
+                    </dl>
+                    <span class="dagspan">DAG</span>
+                    <img src="imgs/leftboximg.gif" />
+                </div>
+
+                <div class="ourimg">
+                    <img src="imgs/cengx.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--白皮书-->
+    <div class="whitepaper" id="m22">
+        <div class="whitepapertitle animated fadeInDown">
+            <h2>Read our white paper here</h2>
+            <div></div>
+        </div>
+
+        <div class="whitepapergroup">
+            <dl class="animated fadeInLeft">
+                <dt class="hvr-float-shadow">
+                    <img src="imgs/book_a1.png" class="hvr-float-shadow" />
+                </dt>
+                <dd class="whitepaperinfo">
+                    <strong>itc white paper</strong>
+                    <p>Complete version</p>
+                </dd>
+                <dd class="whitepaperlinks">
+                    <a href="whitepaper/ITCWHITEPAPER.pdf" class='hvr-wobble-vertical' target="_blank">preview</a>
+                    <a href="whitepaper/ITCWHITEPAPER.pdf" class='hvr-wobble-vertical' download>DOWNLOAD</a>
+                </dd>
+            </dl>
+            <dl class="animated fadeInRight">
+                <dt class="hvr-float-shadow">
+                    <img src="imgs/book_a2.png" />
+                </dt>
+                <dd class="whitepaperinfo">
+                    <strong>itc white paper</strong>
+                    <p>simple version</p>
+                </dd>
+                <dd class="whitepaperlinks">
+                    <a href="whitepaper/simple_version.jpg" class='hvr-wobble-vertical' target="_blank">preview</a>
+                    <a href="whitepaper/simple_version.jpg" class='hvr-wobble-vertical' download>DOWNLOAD</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="line1px"></div>
+
+        <!--ico图标组-->
+        <div class="icogroup" id='m33'>
+            <div class="icogrouptitle">
+                <strong>solutions</strong>
+                <div></div>
+            </div>
+            <div class="dlgourp">
+                <dl class="animated onthisdl pulse" id='lmoreA'>
+                    <dt>
+                        <img src="imgs/ico_1.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>IoT Chain for Vehicles</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">New chapter for Automotive Industry</p>
+                        <p class="tp2">Automotive interaction</p>
+                        <p class="tp2">Vehicle tracking</p>
+                    </dd>
+                    <dd class="lmoreBox">
+                        <span class="lmore" id='lmoreA'>Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreB'>
+                    <dt>
+                        <img src="imgs/ico_2.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>Vaccine Tracing Solution</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">Security, and efficiency</p>
+                        <p class="tp2">IoT Integrations</p>
+                    </dd>
+                    <dd class="lmoreBox">
+                        <span class="lmore" id='lmoreB'>Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreC'>
+                    <dt>
+                        <img src="imgs/ico_3.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>Privacy Solution</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">Returning what's yours back to you</p>
+                        <p class="tp2">Splitting user and personal data</p>
+                    </dd>
+                    <dd class="lmoreBox">
+                        <span class="lmore" id='lmoreC'>Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreD'>
+                    <dt>
+                        <img src="imgs/ico_4.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>Business Solution</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">Monetizing valuable user data</p>
+                        <p class="tp2">Selling user data without</p>
+                        <p class="tp2x">breaching privacy </p>
+                        <p class="tp2">Rewarding users for generating user data</p>
+                    </dd>
+                    <dd class="lmoreBox">
+                        <span class="lmore" id='lmoreD'>Learn more ></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--解决方案-->
+
+    <div class="solution" id="s1">
+        <!--1-->
+        <div class="solutionItem animated solutionItemShow bgGray" id="solutionA">
+            <div class="soultiontitle">
+                <h3>IoT Chain for Vehicles</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>Problem</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">Data sovereignty is not clear and resources are wasted.
+                                    </div>
+                                    <div class="faqd">Transportation resources are not used effectively.</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">ITC Shared ledgers prevent data hacking, adds another layer of protection.
+                                    </div>
+                                    <div class="faqd">Through the ITC network, autonomous vehicles transfer the road of rights that improve the traffic efficiency.</div>
+                                    <div class="faqd">ITC building a market for data exchange and empower smart transportation.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>Solution</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--2-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionB">
+            <div class="soultiontitle">
+                <h3>Vaccine Tracing Solution</h3>
+            </div>
+            <div class="faqsinfo clearfix" style="background-color:'white'">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>Problem</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">Vaccine manufacturer released faulty vaccines.</div>
+                                    <div class="faqd">Reducing Waste and Fraud.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">IoT Chain Ensure that data related to public health is kept safe and transparent. </div>
+                                    <div class="faqd">ITC Improves transparency along every step of the vaccine supply chain including getting vaccines from manufacturers, storage facilities, cold chain distribution, hospitals, and even usage.</div>
+                                    <div class="faqd">ITC technology records the data during the vaccine production process and then store that data on IoT Chain.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>Solution</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--3-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionC">
+            <div class="soultiontitle">
+                <h3>Privacy Solution</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>Problem</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">Personal data are stored and owned by corporation out of the individual's control.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">ITC technology allows the splitting of user and personal data, allowing for corporations to retain user data and individuals to retain their personal data.
+                                    </div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>Solution</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--4-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionD">
+            <div class="soultiontitle">
+                <h3>Business Solution</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>Problem</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">Corporations are unable to sell some of their user data due to attached personal data.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">By splitting personal data from user data,user data can now be sold sold by corporations to interested parties.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>Solution</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>Problem</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">Only corporations are being rewarded for the user data generated by individuals.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">Through the use of IoT devices in the ITC network, individuals are able to benefit from providing their user data to corporations.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>Solution</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--时间线-->
+    <div class="timeline" id="m44" style="display:none">
+        <!--标题-->
+        <div class="grouptitle">
+            <strong>TIMELINE</strong>
+            <span></span>
+        </div>
+        <!--时间轴-->
+        <div class="timeaxis">
+            <img src="imgs/timezou_03.png" class="timezou" />
+            <!--轴盒子-->
+            <div class="timebox">
+                <!--lrbox-->
+                <div class="axisbox_1 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/05</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>Implement
+                                    <br>modular
+                                    <br>framework and
+                                    <br>testbed </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="axisbox_2 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/07</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>Integrate all
+                                    <br>components</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_3 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/10</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>Provide public
+                                    <br>test network</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_4 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/11</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>Create
+                                    <br>ecosystem for
+                                    <br>developers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_5 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/12</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>Release of
+                                    <br>IoT Chain to
+                                    <br>public</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="downico">
+                <img src="imgs/downico_03.png" />
+            </div>
+        </div>
+
+    </div>
+    <!--团队1-->
+    <div class="team" id="m55">
+        <div class="teamtitle">
+            <h5>core TEAM</h5>
+            <div></div>
+        </div>
+        <div class="teamgroup clearfix">
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v1.png" alt="" />
+                    <dl>
+                        <dd>Xie Zhuopeng</dd>
+                        <dd>CEO</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/%E5%8D%93%E9%B9%8F-%E8%B0%A2-b375a239/" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Xie Zhuopeng has been engaged in the field of smart devices for over four years, having designed many smart device architectures for companies both domestically and abroad during this time. His profound study of blockchain over the last three years has
+                    led to the perfect union of smart devices and blockchain through the co-founding IoT Chain.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v2.png" alt="" />
+                    <dl>
+                        <dd>Lyu Xinhao</dd>
+                        <dd>Co-Founder</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/%E6%96%B0%E6%B5%A9-%E5%90%95-77b4b397/" target="_blank">in</a>
+                            </span>
+                            <span class="twitterico">
+                                <a href="https://twitter.com/rain_Peter" target="_blank">
+                                    <img src="imgs/twitterico.png" />
+                                </a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    A blockchain expert and evangelist, Lyu Xinhao has been heavily involved in the field since 2013, translating the first blockchain book “Mastering Bitcoin” into Chinese. He was also responsible for establishing the blockchain team at Xiaomi, a multibillion
+                    dollar corporation, to solve problems associated with isolated data islands in digital marketing. Lyu's passion and desire to promote real world application of blockchain technology is the driving factor behind IoT Chain.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v3.png" alt="" />
+                    <dl>
+                        <dd>Ding Ying</dd>
+                        <dd>CTO</dd>
+                        <dt>
+                            <span>
+                                <a href="http://www.linkedin.com/in/ying-ding-aa4885155/" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Having over 12 years of experience in developing firmware for chips, Ding Ying's deep understanding of such technology is integral to the development of IoT Chain. Ding's expertise also extends to digital imaging, 3D model retrieval, audio and video compression
+                    algorithm and development of financial software for bank cards.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v4.png" alt="" />
+                    <dl>
+                        <dd>Zhao Tan</dd>
+                        <dd>CFO</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/tan-zhao-45b99450" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    In addition to obtaining a MBA from MIT Sloan School of Management, Zhao Tan is also a recognized CPA in China,Singapore and FCCA in the UK. Zhao also worked as the APAC treasurer in a large multinational company being responsible for FX hedging, banking
+                    infrastructure upkeep, rollout of supply chain finance, risk management amongst many other duties. He was further elected into JP Morgan's APAC Client Advisory Council in 2017.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--团队2-->
+    <div class="team team2">
+        <div class="teamtitle">
+            <h5>Advisory TEAM</h5>
+            <div></div>
+        </div>
+        <div class="teamgroup clearfix">
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v5.png" alt="" />
+                    <dl>
+                        <dd>Liang Ran</dd>
+                        <dt>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    As an expert in blockchain technology, Liang focuses his studies on the issues relating to the transaction of assets. He co-edited the China Blockchain Technology and Application Development white paper issued by the Ministry of Industry and Information
+                    Technology as well as ChinaLedger's white paper. He is also the co-founder of RippleFox exchange, China's biggest Ripple and Stellar gateway.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v6.png" alt="" />
+                    <dl>
+                        <dd>Ma Zhiwei</dd>
+                        <dt>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Vice President of Opple Lighting, a company which became the world's largest lighting company after going public. Ma Zhiwei's business expertise and knowledge in lighting greatly assist the team at IoT Chain.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v7.png" alt="" />
+                    <dl>
+                        <dd>Ji Xinhua</dd>
+                        <dt>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Awarded first prize of Shanghai Science and Technology Advancement and being a Master graduated from Shanghai Jiaotong University, Ji Xinhua contributed to establishing standards for Unionpay's credit card chip encryption. IoT Chain strongly values Ji's
+                    strong experience in encryption.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v8.png" alt="" />
+                    <dl>
+                        <dd>Guo Yuhang</dd>
+                        <dt>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Founder of DianRong and STARWIN Capital, Guo Yuhang is a focused investor in fintech. In addition to his extensive knowledge in fintech, Guo has solid connection with the biggest lending platform, Lending Club. Guo's support of the IoT Chain project shows
+                    his confidence in its potential.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--agency-->
+    <div class="agency">
+        <div class="title">INVESTMENT AGENCY</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.fbg.capital/">
+                <img src="imgs/ac3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.linkvc.com/" target="_blank">
+                <img src="imgs/ac1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!-- <a href="javascript:void(0)" target="_blank"><img src="imgs/ac6.png" alt="" class="hvr-bounce-in" /></a> -->
+            <a href="https://www.hashed.com/" target="_blank">
+                <img src="imgs/ac4.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!--<a href="http://inblockchain.com/" target="_blank">
+                <img src="imgs/ac5.png" alt="" class="hvr-bounce-in" />
+            </a>-->
+            <a>
+                <img src="imgs/ac2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!--<a href="http://rednova.io/" target="_blank">
+                <img src="imgs/ac7.png" alt="" class="hvr-bounce-in" />
+            </a>-->
+            <a href="https://www.du.capital/" target="_blank">
+                <img src="imgs/ac7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.ldcap.com/" target="_blank">
+                <img src="imgs/ac8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://gbic.io/" target="_blank">
+                <img src="imgs/ac9.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">TRADING PLATFORM</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.huobi.pro/zh-cn/itc_eth/exchange/" target="_blank">
+                <img src="imgs/bc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.okex.com/spot.html" target="_blank">
+                <img src="imgs/bc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://cex.com/" target="_blank">
+                <img src="imgs/bc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.bibox.com/" target="_blank">
+                <img src="imgs/bc5.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.kucoin.com/#/" target="_blank">
+                <img src="imgs/bc6.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.tokencan.com/index.html" target="_blank">
+                <img src="imgs/bc7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://coinrail.co.kr" target="_blank">
+                <img src="imgs/bc8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://ddex.io/" target="_blank">
+                <img src="imgs/bc9.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.bithumb.com/" target="_blank">
+                <img src="imgs/bc10.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">COOPERATIVE PARTNER</div>
+        <div class="agencyimglist clearfix">
+            <a href="http://gve.io/" target="_blank">
+                <img src="imgs/cc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.gizwits.com/about-us/detail/" target="_blank">
+                <img src="imgs/cc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.adzar-energy.com/" target="_blank">
+                <img src="imgs/cc4.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.futureconnexions.com/" target="_blank">
+                <img src="imgs/cc6.png" alt="" class="hvr-bounce-in" />
+            </a>
+
+            <a href="https://acuteangle.com/" target="_blank">
+                <img src="imgs/cc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://heronode.io/" target="_blank">
+                <img src="imgs/cc7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://sentinel-chain.org/" target="_blank">
+                <img src="imgs/cc8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.guomaitech.com/" target="_blank">
+                <img src="imgs/cc9.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.schonell.com.sg/" target="_blank">
+                <img src="imgs/cc10.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">Media Partners</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.forbes.com/#4fafbde52254">
+                <img src="imgs/dc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.jinse.com/" target="_blank">
+                <img src="imgs/dc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a>
+                <img src="imgs/dc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.chainfor.com/" target="_blank">
+                <img src="imgs/dc4.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+    <!--底部-->
+
+    <div class="footer" id="m77">
+        <div class="footercenter">
+            <!--<dl>
+                <dt>Contact us</dt>
+                <dd>Copyright © 2018 IoT Foundation</dd>
+            </dl>-->
+            <dl>
+                <dt>Subscribe</dt>
+                <dd>
+                    <input id="subscribeEmail" placeholder="Email@example.com" />
+                </dd>
+                <dd>
+                    <button id="subscribeBtn">SUBSCRIBE</button>
+                </dd>
+
+            </dl>
+            <div class="flinks">
+
+                <div>
+                    <a target="_blank" class="weixin">
+                        <img src="imgs/weixin.png" />
+                        <img src="imgs/weixin2.jpg" class="weixin2" />
+                        <div class="ceng" id="ewmceng">
+                            <img src="imgs/weixin2.jpg" class="weixin3" />
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/IoT_Chain" target="_blank">
+                        <img src="imgs/ll1.png" />
+                    </a>
+
+                    <a href="https://www.facebook.com/IoTChain/" target="_blank">
+                        <img src="imgs/ll2.png" />
+                    </a>
+
+                    <!-- <a href="https://iotchaingroup.slack.com/messages/C8K0AB29Z" target="_blank"><img src="imgs/ll3.png" /></a> -->
+                    <a href="https://t.me/IoTChain" target="_blank">
+                        <img src="imgs/ll4.png" />
+                    </a>
+
+                    <a href="http://qm.qq.com/cgi-bin/qm/qr?k=CjS_9da0Uj5SfXX8Wm1PIDuL_Nbjzmc3" target="_blank">
+                        <img src="imgs/ll5.png" />
+                    </a>
+
+                    <a href="https://www.reddit.com/r/iotchain/" target="_blank">
+                        <img src="imgs/ll6.png" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/IoTChainCode" target="_blank">
+                        <img src="imgs/ll7.png" />
+                    </a>
+                    <a href="mailto:support@iotchain.io" target="_blank">
+                        <img src="imgs/ll8.png" />
+                    </a>
+
+                    <a href="https://medium.com/iot-chain" target="_blank">
+                        <img src="imgs/ll9.png" />
+                    </a>
+                    <a href="https://steemit.com/@iot-chain" target="_blank">
+                        <img src="imgs/ll10.png" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJPaVb7NlxhfCHRkz6yuXBw" target="_blank">
+                        <img src="imgs/ll11.png" />
+                    </a>
+                    <a href="https://open.kakao.com/o/gOZK2gY" target="_blank">
+                        <img src="imgs/ll12.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--地球-->
+    <!--<script src='js/three.min.js'></script>
+    <script src='js/CopyShader.js'></script>
+    <script src='js/EffectComposer.js'></script>
+    <script src='js/FilmPass.js'></script>
+    <script src='js/FilmShader.js'></script>
+    <script src='js/ShaderPass.js'></script>
+    <script src='js/RenderPass.js'></script>
+    <script src="js/index.js"></script>-->
+    <!--球体-->
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /news/newsContent/css/
+User-agent: Rogerbot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+Sitemap: https://iotchain.io/sitemap.txt

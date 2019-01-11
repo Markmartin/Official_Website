@@ -1,0 +1,271 @@
+.topMenuHidden {
+  display: none;
+}
+.topMenuShow {
+  display: block;
+}
+canvas {
+  margin-left: 100px;
+}
+.etopmenu {
+  position: relative;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: black;
+}
+.etopmenu.emenubg {
+  position: fixed;
+  z-index: 99999;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+}
+.etop {
+  width: 1200px;
+  margin: 0 auto;
+}
+.etop h1 {
+  float: left;
+}
+.etop h1 img {
+  display: block;
+  overflow: hidden;
+  width: 228px;
+}
+.etop .langmenu {
+  display: none;
+}
+.etop ul {
+  float: right;
+}
+.etop ul li {
+  float: left;
+}
+.etop ul li a {
+  padding: 20px 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+}
+.etop ul li a:hover {
+  color: #f2f2f2;
+}
+.etop ul li span {
+  padding: 20px 15px 20px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.etop ul li span:hover {
+  color: #f2f2f2;
+}
+.etop ul li span:hover em {
+  display: block;
+}
+.etop ul li span strong {
+  font-weight: normal;
+  position: relative;
+}
+.etop ul li span strong:after {
+  content: " ";
+  position: absolute;
+  right: -15px;
+  top: 8px;
+  background: url(../imgs/endown.png) center center no-repeat;
+  width: 10px;
+  height: 5px;
+}
+.etop ul li span em {
+  font-style: normal;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  display: none;
+  z-index: 999;
+}
+.ktopmenu {
+  position: relative;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: black;
+}
+.ktopmenu.kmenubg {
+  position: fixed;
+  z-index: 99999;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0 !important;
+  filter: alpha(opacity=80);
+}
+.ktop {
+  width: 1200px;
+  margin: 0 auto;
+}
+.ktop h1 {
+  float: left;
+}
+.ktop h1 img {
+  display: block;
+  overflow: hidden;
+  width: 228px;
+}
+.ktop .langmenu {
+  display: none;
+}
+.ktop ul {
+  float: right;
+}
+.ktop ul li {
+  float: left;
+}
+.ktop ul li a {
+  padding: 20px 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+}
+.ktop ul li a:hover {
+  color: #f2f2f2;
+}
+.ktop ul li span {
+  padding: 20px 15px 20px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.ktop ul li span:hover {
+  color: #f2f2f2;
+}
+.ktop ul li span:hover em {
+  display: block;
+}
+.ktop ul li span strong {
+  font-weight: normal;
+  position: relative;
+}
+.ktop ul li span strong:after {
+  content: " ";
+  position: absolute;
+  right: -15px;
+  top: 8px;
+  background: url(../imgs/endown.png) center center no-repeat;
+  width: 10px;
+  height: 5px;
+}
+.ktop ul li span em {
+  font-style: normal;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  display: none;
+  z-index: 999;
+}
+.newsContainer {
+  position: relative;
+  margin-top: 80px;
+}
+.newsContainer .newsContent {
+  position: relative;
+  margin: 50px auto 20px;
+  padding: 0;
+}
+.newsContainer .newsContent .newsBox {
+  position: relative;
+  display: block;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+}
+.newsContainer .newsContent .newsBox .newsRowBox {
+  position: relative;
+  display: inline-block;
+  width: 520px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 270px;
+  padding: 15px;
+  margin: 15px;
+  font-size: 0;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem .newItemImg {
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem .newItemDesc {
+  display: table;
+  height: 88px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  line-height: 1.2em;
+  overflow: hidden;
+  font-weight: 500;
+  word-break: keep-alll;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem .newItemBottom {
+  position: absolute;
+  color: #959595;
+  font-size: 13px;
+  height: 13px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem .newItemBottom .newItemDate {
+  position: absolute;
+  left: 0;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem .newItemBottom .newItemReport {
+  position: absolute;
+  right: 0;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem:hover {
+  box-shadow: 0px -1px 0px 0px #f1ecec, -1px 0px 0px 0px #f1ecec, 1px 0px 0px 0px #f1ecec, 0px 1px 0px 0px #f1ecec;
+  cursor: pointer;
+}
+.newsContainer .newsContent .newsBox .newsRowBox .newItem:hover .newItemImg {
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.newsContainer .loadMoreBtn {
+  left: 50%;
+  margin-left: -75px;
+  margin-top: 20px;
+  width: 150px;
+  height: 32px;
+  outline: none;
+  border: 2px solid #d3d3d3;
+  font-size: 15px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  line-height: 32px;
+}
+.newsContainer .loadMoreBtn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,154 @@
+
+    canvas {
+        margin-left: 100px;
+    } // 顶部菜单
+    .topmenu {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;  
+        background-color: black;  
+    }
+    .topmenu.menubg {
+        position: fixed;
+        z-index: 99999;
+        transition: all 1s;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0 !important;
+        filter: Alpha(opacity=80);
+    }
+    .top {
+        width: 1200px;
+        margin: 0 auto;
+        h1 {
+            float: left;
+            img {
+                display: block;
+                overflow: hidden;
+                width: 200px;
+                margin-top: 12px;
+            }
+        }
+        .topBack{
+            float: right;
+            top:26px;
+            width: 80px;
+            height: 28px;
+            outline: none;
+            border:1px solid gray;
+            border-radius: 5px;
+            font-size: 13px;
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            line-height: 28px;
+            
+        }
+        .topBack:hover {
+            cursor: pointer;
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        height: 300px;
+        background: linear-gradient(to bottom, #0a1f3d, #084468);
+        .footercenter {
+            width: 1200px;
+            margin: 0 auto;
+            padding-top: 50px;
+            dl {
+                float: left;
+                dt {
+                    //text-transform: uppercase;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    color: #fff;
+                    font-size: 28px;
+                }
+                dd {
+                    display: inline;
+                    input{
+                       height: 26px; 
+                       width: 220px;
+                       margin: 0;
+                       padding-left: 10px;
+                       padding-right: 10px;
+                       font-size: 15px;
+                       border: 1px solid;
+                       border-color: #51b6e9;
+                    }
+                    button{
+                        height: 26px; 
+                        width: 120px;
+                        margin-left: 10px;
+                        font-size: 15px;
+                        color: #fff;
+                        border: 1px solid;
+                        border-radius: 15px;
+                        border-color: #084468;
+                        background: repeating-linear-gradient(135deg, #6bfaff, #00f3f6, #00deff, #00cafd, #00b9fd, #0089d7, #0065d7, #0050d4, #003acc, #0027ce, #003acc, #0050d4, #0065d7, #0089d7, #00b9fd, #00cafd, #00deff, #00f3f6, #6bfaff, #00f3f6, #00deff, #00cafd, #00b9fd, #0089d7, #0065d7, #0050d4, #003acc, #0027ce);
+                        background-size: 1000% 1000%;
+                        animation: 'myslide' 8s infinite linear both;
+                        -moz-animation: 'myslide' 8s infinite linear both;
+                        -webkit-animation: 'myslide' 8s infinite linear both;
+                        -o-animation: 'myslide' 8s infinite linear both;
+                        outline: none;
+                    }
+            
+                }
+            }
+            .flinks {
+                float: right;
+                margin-top: 32px;
+                div{
+                    display: block;
+                    height: 40px;
+                    a {
+                        display: block;
+                        float: left;
+                        margin: 0 15px;
+                        img {
+                            width: 30px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer .footercenter .flinks .weixin {
+        position: relative;
+        .weixin2 {
+            position: absolute;
+            display: none;
+            width: 130px !important;
+            height: auto !important;
+            top: 40px;
+            left: 50%;
+            margin-left: -65px;
+            z-index: 99;
+        }
+        .ceng {
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            z-index: 99999;
+            left: -30px;
+            bottom: 30px;
+            display: none;
+            img {
+                width: 90px !important;
+                height: 90px !important;
+            }
+        }
+    }
+    

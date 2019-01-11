@@ -1,0 +1,1294 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118912394-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-118912394-1');
+    </script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MD76WF5');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IoT Chain - A High-Security Lite IoT OS - ITC</title>
+    <meta name="description" content="IoT Chain is a secure, lite operating system for the Internet of Things. Using a hybrid approach of blockchain, Practical Byzantine Fault Tolerance (PBFT), and blockless Directed Acyclic Graph (DAG) architecture, ITC is able to create a decentralized IoT network with unparalleled speed and security that allows users to maintain their data sovereignty."
+    />
+    <meta name="keywords" content="IoT Chain, ITC" />
+    <link rel="stylesheet" type="text/css" href="css/root.css" />
+    <link rel="stylesheet" type="text/css" href="css/mob.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" type="text/css" href="css/pad.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+    <script src="js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>-->
+    <link rel="icon" href="titleLogo.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD76WF5" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+    <div id='m11'></div>
+    <!--顶部视频背景-->
+
+    <!-- <弹出菜单> -->
+    <div class="menuCtx">
+        <div class="telegram telegramFrame border" id="telegramMenuKn">
+            <label class="titleStyle titleBase">telegram</label>
+        </div>
+        <div class="twitter twitterFrame border" id="twitterMenuKn">
+            <label class="titleStyle titleBase">twitter</label>
+        </div>
+        <!--<div class="facebook facebookFrame border" id="facebookMenu">
+            <label class="titleStyle titleBase">facebook</label>
+        </div>-->
+        <div class="youtube youtubeFrame border" id="youtubeMenu">
+            <label class="titleStyle titleBase">youtube</label>
+        </div>
+        <div class="medium mediumFrame border" id="mediumMenu">
+            <label class="titleStyle titleBase">medium</label>
+        </div>
+        <div class="steemit steemitFrame border" id="steemitMenu">
+            <label class="titleStyle titleBase">steemit</label>
+        </div>
+    </div>
+    <!-- <弹出菜单> -->
+
+    <div class="headervideo" id="container">
+        <div class="topVideoBox">
+            <a href="https://medium.com/iot-chain/the-iot-chain-mainnet-launch-stage-observation-7248880d2f59" target="_blank">
+                <div class="topVideo"></div>
+            </a>
+            <!-- <video class="topVideo" id="topVideo" src="video/itc.mp4" poster="imgs/video_bg.jpg" playsinline='playsinline' webkit-playsinline="true" autoplay loop muted preload="auto"> 
+                   <source src="video/itc.mp4" type="video/mp4">
+                   <source src="video/itc.ogg" type="video/ogg">
+                   <source src="video/itc.webm" type="video/webm">
+            </video> -->
+        </div>
+        <div class="topmenu menubg">
+            <div class="top clearfix topbg">
+                <h1 class="animated fadeInLeft">
+                    <a href="">
+                        <img src="imgs/iot_logo.png" alt="" />
+                    </a>
+                </h1>
+                <div class="langmenu">
+                    <span onclick="window.location='index.html'">
+                        <img src="imgs/en.png" alt="" />
+                    </span>
+                    <span class="showmenu">
+                        <img src="imgs/menu.png" alt="" />
+                    </span>
+                </div>
+                <ul class="animated bounceInDown">
+                    <li>
+                        <a href="https://iotchain.io/wallet" target="_blank" class="hvr-underline-from-center">월렛</a>
+                    </li>
+                    <li>
+                        <a href="https://iotchain.io/explorer" target="_blank" class="hvr-underline-from-center">블록체인 브라우저</a>
+                    </li>
+                    <li>
+                        <a href="https://iotchain.io/news" class="hvr-underline-from-center" id="mNews">뉴스</a>
+                    </li>
+                    <!-- <li>
+                        <a class="hvr-underline-from-center" id="m1">ITC란</a>
+                    </li> -->
+                    <li>
+                        <a class="hvr-underline-from-center" id="m2">백서</a>
+                    </li>
+                    <!-- <li>
+                        <a class="hvr-underline-from-center" id="m3">솔루션</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="hvr-underline-from-center" id="m4">타임라인</a>
+                    </li> -->
+                    <li>
+                        <a class="hvr-underline-from-center" id="m5">팀</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/iotchain" class="hvr-underline-from-center">블로그</a>
+                    </li>
+                    <li>
+                        <a class="hvr-underline-from-center" id="m7">연락처</a>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:void(0)" class="hvr-underline-from-center" id="m8">신병 모집</a>
+                    </li>-->
+                    <li>
+                        <a href="https://bounty.iotchain.io/" target="_blank" class="hvr-underline-from-center" id="m9">바운티</a>
+                    </li>
+                    <li>
+                        <span class="">
+                            <strong onclick="window.location='korean.html'">한국어</strong>
+                            <em onclick="window.location='index.html'">English</em>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--<dl class="logo_info">
+            <dt class="animated zoomInDown">
+				<img src="imgs/logobig_03.png" />
+			</dt>
+            <dt class="animated zoomInDown">
+				IoT Chain
+			</dt>
+            <dd class="animated zoomInUp worda">
+                A
+                <em>HIGH-SECURITY</em>
+            </dd>
+            <dd class="animated zoomInUp wordb">
+                LITE IoT OS
+            </dd>
+        </dl>
+
+        <div class="taskCtx animated zoomInDown wordb">
+            <button class="getITC border " id="getITC">Get Free ITC</button>
+        </div>-->
+    </div>
+
+
+
+    <!--愿景-->
+    <div class="ourvision">
+        <!--韩文版table-->
+        <table class="ourvisiontable animated bounceInLeft">
+            <tr>
+                <td colspan="8" class="tdtitle">회사 비전</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/safeico.png" alt="" />
+                </td>
+                <td class="tdinfo">ITC 네트워크내의 사물 인터넷 기기들을 위한 완벽한 보안을 구축</td>
+                <td>
+                    <img src="imgs/dataico.png" alt="" />
+                </td>
+                <td class="tdinfo">데이터 주권을 원래 가져야 할, 주인들에게 되돌려 주는 것</td>
+                <td>
+                    <img src="imgs/speedico.png" alt="" />
+                </td>
+                <td class="tdinfo">비할데가 없는 압도적인 속도와 안정성을 갖춘 IoT 데이터 전송</td>
+                <td>
+                    <img src="imgs/intelligence.png" alt="" />
+                </td>
+                <td class="tdinfo">사용자 데이터를 통한 AI 개발지원</td>
+            </tr>
+        </table>
+        <table class="ourvisiontable2 animated bounceInLeft">
+            <tr>
+                <td colspan="8" class="tdtitle">회사 비전</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/safeico.png" alt="" />
+                </td>
+                <td class="tdinfo">ITC 네트워크내의 사물 인터넷 기기들을 위한 완벽한 보안을 구축</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/dataico.png" alt="" />
+                </td>
+                <td class="tdinfo">데이터 주권을 원래 가져야 할, 주인들에게 되돌려 주는 것</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/speedico.png" alt="" />
+                </td>
+                <td class="tdinfo">비할데가 없는 압도적인 속도와 안정성을 갖춘 IoT 데이터 전송</td>
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <img src="imgs/intelligence.png" alt="" />
+                </td>
+                <td class="tdinfo">사용자 데이터를 통한 AI 개발 지원</td>
+            </tr>
+        </table>
+        <div class="ourvisionbottom">
+            <img src="imgs/cengx.png" class="mobvisionimg" />
+            <div class="ourvisonwrap">
+                <div class="imgboxinfo clearfix">
+                    <dl class="imginfo">
+                        <dt>IoT Chain</dt>
+                        <dd>
+                            <p>IoT Chain (ITC)는 블록체인과 PBFT, DAG, SPV, CPS 기술을 결합하여 개발한 라이트 운영체제(Lite OS)로서 데이터를 계층화하고, 탈 중앙화 형태로 저장하며, 네트워크 내의 수백만대의 IoT 노드를 활용하여, 강력한 보안 시스템을 제공 하고 있습니다.</p>
+                        </dd>
+
+                        <dd>
+                            <p>이 기술은, 에너지 효율적이며 탈 중앙화된 환경속에서, IoT 기기들을 위한 공유경제를 실현시킬 것 입니다. 뿐만 아니라, 어마어마한 양의 자본적 가치가 담겨 있는 사용자 데이터를 만들어낼 것이고, 이 데이터는 AI 개발을 위한 “연료”로 사용 되며, 동시에 사용자들은 이 데이터를 “연료”로 제공함으로써 보상을 받게 될 것 입니다,</p>
+                        </dd>
+
+                        <dd>
+                            <p>ITC 네트워크 내에서, 가정, 기업 심지어 도시내의 모든 IoT 기기의 상호 연결은 전송 혼잡 (Transfer Congestion), 악의적인 공격, 개인정보를 잃는 것 없이, IoT시대의 진정한 전성기를 향해 나아가도록 해줄 것 입니다.</p>
+                        </dd>
+
+                        <dd>
+                            <p>ITC의 구현 그리고 수익 창출은 단순히 개념 수준에 머물러 있는 것이 아니라, 아주 가까운 미래에 실제로 적용 될 응용 프로그램들을 이미 갖고 있습니다.</p>
+                        </dd>
+                    </dl>
+                    <span class="dagspan">DAG</span>
+                    <img src="imgs/leftboximg.gif" />
+                </div>
+
+                <div class="ourimg">
+                    <img src="imgs/cengx.png" class="animated bounceIn hvr-bob" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--白皮书-->
+    <div class="whitepaper" id="m22">
+        <div class="whitepapertitle animated fadeInDown">
+            <h2>저희 백서를 읽어 주세요 </h2>
+            <div></div>
+        </div>
+
+        <div class="whitepapergroup">
+            <dl class="animated fadeInLeft">
+                <dt class="hvr-float-shadow">
+                    <img src="imgs/book_a1.png" class="hvr-float-shadow" />
+                </dt>
+                <dd class="whitepaperinfo">
+                    <strong>IoT Chain 백서</strong>
+                    <p>백서 본문</p>
+                </dd>
+                <dd class="whitepaperlinks">
+                    <a href="whitepaper/ITCWHITEPAPER_KR.pdf" class='hvr-wobble-vertical' target="_blank">preview</a>
+                    <a href="whitepaper/ITCWHITEPAPER_KR.pdf" class='hvr-wobble-vertical' download>DOWNLOAD</a>
+                </dd>
+            </dl>
+            <dl class="animated fadeInRight">
+                <dt class="hvr-float-shadow">
+                    <img src="imgs/book_a2.png" />
+                </dt>
+                <dd class="whitepaperinfo">
+                    <strong>IoT Chain 백서</strong>
+                    <p>백서 요약</p>
+                </dd>
+                <dd class="whitepaperlinks">
+                    <a href="whitepaper/simple_version_kr.jpg" class='hvr-wobble-vertical' target="_blank">preview</a>
+                    <a href="whitepaper/simple_version_kr.jpg" class='hvr-wobble-vertical' download>DOWNLOAD</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="line1px"></div>
+        <!--ico图标组 icogroup_ko-->
+        <div class="icogroup " id="m33">
+            <div class="icogrouptitle">
+                <strong>솔루션</strong>
+                <div></div>
+            </div>
+            <div class="dlgourp">
+                <dl class="animated onthisdl pulse" id='lmoreA'>
+                    <dt>
+                        <img src="imgs/ico_1.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>자동차용 IoT Chain</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">자동차 산업의 새로운 장</p>
+                        <p class="tp2">자동차 상호 작용</p>
+                        <p class="tp2">차량 추적</p>
+                    </dd>
+                    <dd class="lmoreBox">
+                        <span class="lmore" id='lmoreA'>Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreB'>
+                    <dt>
+                        <img src="imgs/ico_2.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>백신 추적 솔루션</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">보안 및 효율성</p>
+                        <p class="tp2">IoT 인터그레이션</p>
+                    </dd>
+                    <dd class="lmoreBox" id='lmoreB'>
+                        <span class="lmore">Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreC'>
+                    <dt>
+                        <img src="imgs/ico_3.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>개인 정보 보안 솔루션</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">개인 정보 보안 솔루션</p>
+                        <p class="tp2">사용자 및 개인 데이터 분할</p>
+                    </dd>
+                    <dd class="lmoreBox" id='lmoreC'>
+                        <span class="lmore">Learn more ></span>
+                    </dd>
+                </dl>
+                <dl class="animated" id='lmoreD'>
+                    <dt>
+                        <img src="imgs/ico_4.png" alt="" class="hvr-buzz-out" />
+                    </dt>
+                    <dd class="mobshow">
+                        <strong>비즈니스 솔루션</strong>
+                    </dd>
+                    <dd>
+                        <p class="tp1">사용자 데이터의 자본화</p>
+                        <p class="tp2">프라이버시 침해 없이 사용자 데이터를 팔다</p>
+                        <p class="tp2">사용자 데이터를 제공해준 개인들에게 보상을 하다</p>
+                    </dd>
+                    <dd class="lmoreBox" id='lmoreD'>
+                        <span class="lmore">Learn more ></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!--解决方案 new-->
+    <div class="solution" id="s1">
+        <!--1-->
+        <div class="solutionItem animated solutionItemShow bgGray" id="solutionA">
+            <div class="soultiontitle">
+                <h3>자동차용 IoT Chain</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제점</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">불명확한 데이터 주권과 낭비된 자원</div>
+                                    <div class="faqd">교통 자원이 효과적으로 사용되지 않고 있다.</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">ITC 공유 원장이 데이터 해킹을 방지하고 또 다른 보호층을 추가합니다.</div>
+                                    <div class="faqd"> ITC 네트워크를 통해 자율주행차들이 도로권를 이전하여 교통 효율을 향상시킵니다. </div>
+                                    <div class="faqd">ITC가 데이터 교환의 시장을 구축하고 스마트 교통을 강화합니다.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>솔루션</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--2-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionB">
+            <div class="soultiontitle">
+                <h3>백신 추적 솔루션</h3>
+            </div>
+            <div class="faqsinfo clearfix" style="background-color:'white'">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제점</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">백신 제조업체가 결함 백신을 출시했다.</div>
+                                    <div class="faqd">낭비 및 사기</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">IoT Chain이 공중 보건과 관련된 데이터가 안전하고 투명하게 유지되도록 보장합니다.</div>
+                                    <div class="faqd">ITC가 제조업체/보관 시설/저온 유통 체계/병원과 백신 접종까지 포함한 백신 공급망의 모든 단계에서 투명성을 향상시킵니다.
+                                    </div>
+                                    <div class="faqd">ITC 기술이 백신 생산 과정에서 데이터를 기록한 후 해당 데이터를 IoT Chain에 저장합니다.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>솔루션</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--3-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionC">
+            <div class="soultiontitle">
+                <h3>개인 정보 보안 솔루션</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제점</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">개인이 기업과 어떠한 “접촉”을 할 때 기업은 사용자 및 개인 정보를 저장하고 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">ITC 기술은 모든 데이터는 개인에게 귀속되게끔 보장하지만, 데이터들이 공유 될 수 있도록 유동성 또한 보장합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>솔루션</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--4-->
+        <div class="solutionItem animated solutionItemHide bgGray" id="solutionD">
+            <div class="soultiontitle">
+                <h3>비즈니스 솔루션</h3>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제점</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">특정 기업들은 개인정보가 담겨 있어, 사용자 데이터를 자유롭게 자산화 할 수가 없다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">사용자 데이터와 개인정보를 분리하는 방식으로, 기업은 사용자 데이터를 프라이버시 침해 없이, 이해관계자에게 판매할 수 있습니다.</div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>솔루션</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제점</dd>
+                            </dl>
+                            <div class="problemList">
+                                <div class="problemListBox">
+                                    <div class="faqd faqd_1hang">개인이 만들어낸 사용자 데이터로 오직 기업만이 이윤을 얻습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <div class="solutionList">
+                                <div class="solutionListBox">
+                                    <div class="faqd faqd_1hang">ITC 네트워크내의 IoT 기기 사용을 통해, 개인들은 기업에게 그들의 데이터를 제공함으로써 이윤을 얻을 수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>솔루션</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--解决方案 old-->
+    <!--<div class="solution" id="s1">
+        <div class="solutionA animated solutionAshow">
+            <div class="soultiontitl">
+                <h3>에너지 솔루션 : </h3>
+                <p>더 적을 수록 더 좋다</p>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <h4>효율적인 전송 시스템을 제공</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제 </dd>
+                            </dl>
+                            <div class="faqd faqd_1hang">기존 전송 방식은 굉장히 비효율적입니다.
+                                <br /> </div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결 방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">ITC는 빠르고 효율적으로 최소한의 “자원”을 소비하는 전송 시스템을 제공 합니다!</div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p>라이트 운영체제로서 설명드리자면, ITC OS는 소모성이 엄청난 환경에서 에너지 효율을 염두에 두고 개발되었습니다. 복잡한 연산과 고도로 암호화된 데이터를 사용하여
+                            최고가 되느니, 저희 팀은 “Less is More” (때론 간결한 것이 더 낫다)의 방법을 채택 했습니다.</p>
+                        <p>ITC 운영 체제는 ITC 칩이 내장된 전구와 같은 일상생활의 지극히 단순한 사물들에서 작동 할 수 있도록 설계 되었습니다. 자사의 라이트 생태계 구축과 함께 대량의
+                            IoT 기기들과의 호환 이라는 이 두가지 부분을 고려하면, ITC는 전에없을 정도로 훨씬 크고 빠른 노드 네트워크를 효과적으로 구축해냈습니다. </p>
+                    </div>
+                </div>
+                <div class="infops">
+                    <p>라이트 운영체제로서 설명드리자면, ITC OS는 소모성이 엄청난 환경에서 에너지 효율을 염두에 두고 개발되었습니다. 복잡한 연산과 고도로 암호화된 데이터를 사용하여 최고가
+                        되느니, 저희 팀은 “Less is More” (때론 간결한 것이 더 낫다)의 방법을 채택 했습니다.</p>
+                    <p>ITC 운영 체제는 ITC 칩이 내장된 전구와 같은 일상생활의 지극히 단순한 사물들에서 작동 할 수 있도록 설계 되었습니다. 자사의 라이트 생태계 구축과 함께 대량의 IoT
+                        기기들과의 호환 이라는 이 두가지 부분을 고려하면, ITC는 전에없을 정도로 훨씬 크고 빠른 노드 네트워크를 효과적으로 구축해냈습니다. </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="solutionA animated">
+            <div class="soultiontitl">
+                <h3>서버 솔루션 : </h3>
+                <p>중앙화된 것을 탈중앙화하다</p>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <h4>서버 비용 절감</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제 </dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">대기업은 매년 중앙 집중형 서버를 유지하기 위해 수백만달러를 지불합니다.</div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결 방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">
+                                ITC는 아주 적은 비용으로 데이터 전송 및 저장을 할 수 있는 분산화된 서버를 제공 할 수 있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p>ITC 네트워크는 전등, 스마트 잠금 장치, 스마트 폰 등 기기 주인이 자체적으로 관리하는 일상생활 속의 가장 기본적인 IoT 기기들로 구성 됩니다.</p>
+                        <p>데이터 저장 및 전송은 ITC 칩이 내장된 수백만대의 IoT 노드을 이용한 네트워크 내에서 유지 관리 되며, 네트워크는 초당 100,000건의 트랜잭션을 처리할 수
+                            있어, 데이터 과부하로 인한, “네트워크 혼잡” 현상을 효율적으로 예방 할 수 있습니다</p>
+                    </div>
+                  
+                    <h4 class="h4x">완벽한 보안을 구축</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제 </dd>
+                            </dl>
+                            <div class="faqd faqd_1hang">중앙화된 서버는 공격 받기 매우 쉽다.</div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">ITC 기술을 이용한 분산식 데이터 저장소는 공격을 막기 위한 수억개의 IoT 노드들을 만들어냅니다.</div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p class="p4x">중앙화된 서버 같은 경우 서버가 손상 되지 않도록 하기위해 지속적인 모니터링 및 유지 관리에 의존해야 하지만, ITC는 그럴 필요가 없습니다.
+                            보안이 완전히 해킹되려면, 모든 노드의 절반 이상을 공격해야 하기 때문입니다.
+                        </p>
+                        <p>비록 몇몇 프로젝트의 기술들은 수수료가 없는 강점을 내세웁니다만, 신중히 책정된 수수료는 공격자들이 충분한 양의 노드를 공격할때 부담해야 할 비용을 감안했을 때,
+                            ITC를 보다 안전한 기술로 만들어줍니다.</p>
+                        <p>수수료는 보안을 위한 비용 정도로 여겨져서는 안됩니다. 왜냐하면, 합법적인 사용자들은 그들의 사용자 데이터 판매를 통해 그 수수료들을 획기적으로 절감할 수 있기
+                            때문입니다.</p>
+                    </div>
+                </div>
+                <div class="infops">
+                    <p>ITC 네트워크는 전등, 스마트 잠금 장치, 스마트 폰 등 기기 주인이 자체적으로 관리하는 일상생활 속의 가장 기본적인 IoT 기기들로 구성 됩니다.</p>
+                    <p>데이터 저장 및 전송은 ITC 칩이 내장된 수백만대의 IoT 노드을 이용한 네트워크 내에서 유지 관리 되며, 네트워크는 초당 100,000건의 트랜잭션을 처리할 수 있어,
+                        데이터 과부하로 인한, “네트워크 혼잡” 현상을 효율적으로 예방 할 수 있습니다</p>
+                    <p class="p4x">중앙화된 서버 같은 경우 서버가 손상 되지 않도록 하기위해 지속적인 모니터링 및 유지 관리에 의존해야 하지만, ITC는 그럴 필요가 없습니다. 보안이
+                        완전히 해킹되려면, 모든 노드의 절반 이상을 공격해야 하기 때문입니다.
+                    </p>
+                    <p>비록 몇몇 프로젝트의 기술들은 수수료가 없는 강점을 내세웁니다만, 신중히 책정된 수수료는 공격자들이 충분한 양의 노드를 공격할때 부담해야 할 비용을 감안했을 때, ITC를
+                        보다 안전한 기술로 만들어줍니다.</p>
+                    <p>수수료는 보안을 위한 비용 정도로 여겨져서는 안됩니다. 왜냐하면, 합법적인 사용자들은 그들의 사용자 데이터 판매를 통해 그 수수료들을 획기적으로 절감할 수 있기 때문입니다.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="solutionA animated">
+            <div class="soultiontitl">
+                <h3>개인 정보 보안 솔루션 :</h3>
+                <p>당신의 것을 당신에게 돌려드립니다</p>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <h4>사용자 및 개인 데이터 분할</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제</dd>
+                            </dl>
+                            <div class="faqd faqd_1hang">개인이 기업과 어떠한 “접촉”을 할 때 기업은 사용자 및 개인 정보를 저장하고 있습니다.</div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결 방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">ITC 기술은 모든 데이터는 개인에게 귀속되게끔 보장하지만, 데이터들이 공유 될 수 있도록 유동성 또한
+                                보장합니다.</div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p>우리가 기업과 교류를 할때, 당신의 사용자 데이터를 포함한 저희의 신용카드 정보, 주소, 생년월일, 이름과 같은 개인정보 까지 모든 데이터가 기업에 저장됩니다.
+                        </p>
+                        <p>ITC 네트워크는 개인이 생성한 모든 데이터들을 개인에게 귀속되게끔 보장하는 동시에, 개인정보와 사용자 데이터를 분리하는 기능 또한 있습니다. 따라서 만약 개인이
+                            허가만 해준다면, 모든 개인정보를 제외한 그들의 사용자 데이터를 제공해 줄 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="infops">
+                    <p>우리가 기업과 교류를 할때, 당신의 사용자 데이터를 포함한 저희의 신용카드 정보, 주소, 생년월일, 이름과 같은 개인정보 까지 모든 데이터가 기업에 저장됩니다. </p>
+                    <p>ITC 네트워크는 개인이 생성한 모든 데이터들을 개인에게 귀속되게끔 보장하는 동시에, 개인정보와 사용자 데이터를 분리하는 기능 또한 있습니다. 따라서 만약 개인이 허가만
+                        해준다면, 모든 개인정보를 제외한 그들의 사용자 데이터를 제공해 줄 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="solutionA animated">
+            <div class="soultiontitl">
+                <h3>비즈니스 솔루션 : </h3>
+                <p>사용자 데이터의 자본화</p>
+            </div>
+            <div class="faqsinfo clearfix">
+                <div class="faqs">
+                    <h4>프라이버시 침해 없이 사용자 데이터를 팔다</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제 </dd>
+                            </dl>
+                            <div class="faqd faqd_1hang">특정 기업들은 개인정보가 담겨 있어, 사용자 데이터를 자유롭게 자산화 할 수가 없다.</div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결 방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang">사용자 데이터와 개인정보를 분리하는 방식으로, 기업은 사용자 데이터를 프라이버시 침해 없이, 이해관계자에게
+                                판매할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p>사용자 데이터는 기업이 가지고 있는 가장 가치있는 상품 중 하나 입니다. 사용자 트렌드를 기반으로 기존 비즈니스를 개발하거나, 혹은 인공지능을 통해 새로운 기술을
+                            개발하거나, 아니면 차라리 비슷한 목적으로 다른 회사에게 판매를 하던 말입니다.</p>
+                        <p>기업이 소유한 대량생성된 데이터들은 개인정보가 담겨있기 때문에, 이 데이터를 판매 한다는 것은 비윤리적이며 불법이라고 할 수 있습니다. ITC 네트워크 내에서는,
+                            사용자 데이터들이 개인 정보가 담겨있지 않도록 보장함으로써, 동의하에 기업들은 사용자 데이터를 윤리적이고 합법적으로 판매할 수 있게 됩니다.</p>
+                    </div>
+                    <h4 class="h4x2">사용자 데이터를 제공해준 개인들에게 보상을 하다.</h4>
+                    <div class="faqlist">
+                        <div class="faqli clearfix faqlia">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicoa.png" />
+                                </dt>
+                                <dd>문제</dd>
+                            </dl>
+                            <div class="faqd faqd_1hang">개인이 만들어낸 사용자 데이터로 오직 기업만이 이윤을 얻습니다.</div>
+                        </div>
+                        <div class="faqli clearfix faqlib">
+                            <dl>
+                                <dt>
+                                    <img src="imgs/sicob.png" />
+                                </dt>
+                                <dd>해결 방법</dd>
+                            </dl>
+                            <div class="faqd faqd_2hang"> ITC 네트워크내의 IoT 기기 사용을 통해, 개인들은 기업에게 그들의 데이터를 제공함으로써 이윤을 얻을 수
+                                있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="mobps">
+                        <p class="p4x2">기업이 누리는 모든 데이터들은 개인이 만들어낸 것이므로, 개인들 또한 이에 대해 적절한 보상을 받아야 합니다. 따라서, ITC 네트워크 내에서
+                            생성된 데이터는 IoT 기기의 주인에게 속한 것이며, 만약 기업들이 이 데이터에 접근하고 싶다면, 사용자의 권한이 필요하고 이에따라 사용자에게 적절한 보상을
+                            제공해야 합니다.</p>
+                        <p>이 보상은 ITC 네트워크내의 트랜잭션 수수료를 상쇄하는 것 등에 이용 될 수 습니다. </p>
+                    </div>
+                </div>
+                <div class="infops">
+                    <p>사용자 데이터는 기업이 가지고 있는 가장 가치있는 상품 중 하나 입니다. 사용자 트렌드를 기반으로 기존 비즈니스를 개발하거나, 혹은 인공지능을 통해 새로운 기술을
+                        개발하거나, 아니면 차라리 비슷한 목적으로 다른 회사에게 판매를 하던 말입니다.</p>
+                    <p>기업이 소유한 대량생성된 데이터들은 개인정보가 담겨있기 때문에, 이 데이터를 판매 한다는 것은 비윤리적이며 불법이라고 할 수 있습니다. ITC 네트워크 내에서는, 사용자
+                        데이터들이 개인 정보가 담겨있지 않도록 보장함으로써, 동의하에 기업들은 사용자 데이터를 윤리적이고 합법적으로 판매할 수 있게 됩니다.</p>
+                    <p class="p4x2">기업이 누리는 모든 데이터들은 개인이 만들어낸 것이므로, 개인들 또한 이에 대해 적절한 보상을 받아야 합니다. 따라서, ITC 네트워크 내에서 생성된
+                        데이터는 IoT 기기의 주인에게 속한 것이며, 만약 기업들이 이 데이터에 접근하고 싶다면, 사용자의 권한이 필요하고 이에따라 사용자에게 적절한 보상을 제공해야 합니다.</p>
+                    <p>이 보상은 ITC 네트워크내의 트랜잭션 수수료를 상쇄하는 것 등에 이용 될 수 습니다. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!--时间线-->
+    <div class="timeline" id="m44" style="display:none">
+        <!--标题-->
+        <div class="grouptitle">
+            <strong>로드맵</strong>
+            <span></span>
+        </div>
+        <!--时间轴-->
+        <div class="timeaxis">
+            <img src="imgs/timezou_03_ko.png" class="timezou" />
+            <!--轴盒子-->
+            <div class="timebox">
+                <!--lrbox-->
+                <div class="axisbox_1 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/05</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>모듈러 프레임워크 및
+                                    <br>테스트 베드</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="axisbox_2 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/07</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>전체 구성요소 통합</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_3 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/10</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>퍼블릭 테스트 네트워크</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_4 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/11</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>개발자 생태계</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="axisbox_5 axisbox">
+                    <div class="circular">
+                        <div class="axisdata">
+                            <div class="pore">
+                                <span>2018/12</span>
+                            </div>
+                        </div>
+                        <div class="circularinner hvr-grow-shadow">
+                            <div class="circularwrap">
+                                <p>iotchain 공개</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="axisbox_6 axisbox">
+						<div class="circular">
+							<div class="axisdata">
+								<div class="pore"><span>2018/12/30</span></div>
+							</div>
+							<div class="circularinner hvr-grow-shadow">
+								<div class="circularwrap">
+									<p>DAG 스트럭처 <br>온라인 접속</p> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="axisbox_7 axisbox">
+						<div class="circular">
+							<div class="axisdata">
+								<div class="pore"><span>2019/02/28</span></div>
+							</div>
+							<div class="circularinner hvr-grow-shadow">
+								<div class="circularwrap">
+									<p>DAG 스트럭처 <br>디버그 & 메인넷 <br>개시</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
+            </div>
+            <div class="downico">
+                <img src="imgs/downico_03.png" />
+            </div>
+        </div>
+    </div>
+    <!--团队1-->
+    <div class="team" id="m55">
+        <div class="teamtitle">
+            <h5>주요 팀 멤버</h5>
+            <div></div>
+        </div>
+        <div class="teamgroup clearfix">
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v1.png" alt="" />
+                    <dl>
+                        <dd>시에 주어 펑(Xie Zhuopeng)</dd>
+                        <dd>CEO</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/%E5%8D%93%E9%B9%8F-%E8%B0%A2-b375a239/" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    IT분야의 수석 기업가이자 전문가이다. 그는 스마트 하드웨어 분야에서 4년간 종사했으며3년 간 블록체인에 대하여 깊이 연구해왔다. Xie는 스마트 하드웨어에 대한 깊은 통찰을 지니고 있으며 많은 스마트 하드웨어 관련회담에서 연사로 초청 받아왔다. 그는 국내외 여러 조명 회사들을 위한 스마트 조명 구조 설계에 참여하였으며 그 외에도 여러 스마트 하드웨어 구조 설계에 참여하였다.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v2.png" alt="" />
+                    <dl>
+                        <dd>뤼신호우(Lyu Xinhao)</dd>
+                        <dd>Co-Founder</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/%E6%96%B0%E6%B5%A9-%E5%90%95-77b4b397/" target="_blank">in</a>
+                            </span>
+                            <span class="twitterico">
+                                <a href="https://twitter.com/rain_Peter" target="_blank">
+                                    <img src="imgs/twitterico.png" />
+                                </a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    블록 체인 기술 전문가로서 2013 년부터 Bitcoin 분야에 참여하여 첫 번째 블록 체인 책 "mastering bitcoin"을 번역하였으며 Xiaomi에 블록 체인 팀을 설립하여 디지털 마케팅 분야의 고립 된 데이터 문제를 해결하였다. blockchain 기술자와 개발을 적극적으로 추진해 온 블록 체인 전도사다.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v3.png" alt="" />
+                    <dl>
+                        <dd>딩잉(Ding Ying)</dd>
+                        <dd>CTO</dd>
+                        <dt>
+                            <span>
+                                <a href="http://www.linkedin.com/in/ying-ding-aa4885155/" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    Ding Yin은 칩의 펌웨어 개발을 위해서12년간 일하였으며 디지털 이미지와, 3D모델 검색, 음성 및 영상의 압축 알고리즘 처리, 그리고 은행카드의 금융 소프트웨어 등에서 경험이 있다. Ding은 칩의 하드웨어와내장된 소프트웨어 구조, 그리고 암호화 알고리즘에 대해 깊게 이해하고 있다.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v4.png" alt="" />
+                    <dl>
+                        <dd>쟈오탄(Zhao Tan)</dd>
+                        <dd>CFO</dd>
+                        <dt>
+                            <span>
+                                <a href="https://www.linkedin.com/in/tan-zhao-45b99450" target="_blank">in</a>
+                            </span>
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    MIT출신의 경영학 석사이며 중국, 싱가폴, 그리고 영국의 공인 회계사이다. 그는 한때 Kerry의 아시아 태평양 지부 CFO였으며 몇 억달러의외국 외환 손실 방지, 국경간 자본 이동을 위한 전략적 계획, 현금 흐름 관리 그리고 은행 경영 시스템을 짜는 일을 담당했다 (J.P. Morgan). 그는 한때 중국의 IPO와 싱가폴의 KPMG의 감사팀에서 일하기도 했다. Zhao는 금융 관리, 자금 조달 그리고 IPO에 풍부한 경험이 있고 금융 기술
+                    혁신에 큰 흥미가 있다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--团队2-->
+    <div class="team team2">
+        <div class="teamtitle">
+            <h5>자문단</h5>
+            <div></div>
+        </div>
+        <div class="teamgroup clearfix">
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v5.png" alt="" />
+                    <dl>
+                        <dd>량란（Liang Ran）</dd>
+
+                        <dt>
+
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    블록체인 분야의전문가로서, Liang은 주로 블록체인 자산의 문제와 거래에 대해서 연구했다. 그는 ChinaLedger Whitepaper와 ChinaBlockchain Technology, 그리고 MIIT에 의해서 발행된Application Development Whitepaper를 공동 편집했으며 MIIT의 첫 번째 중국 블록체인 개발 콘테스트를 심사했다. 또한, 그는 RippleFox의 공동 창시자이다. (RippleFox는 중국 최대규모의
+                    Ripple과 Stellar게이트웨이이며 Ripple과 Stellar의중국 커뮤니티를 이끌고 있기도 하다)
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v6.png" alt="" />
+                    <dl>
+                        <dd>마즈웨이(Ma Zhiwei)</dd>
+
+                        <dt>
+
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    OppleLighting Co., Ltd (603515)의 부사장이다. Opple은 공기업으로 바뀐 뒤 300억 위안이 넘는 시장 가치를 기록하며 세계 최대의 조명회사가 되었다.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v7.png" alt="" />
+                    <dl>
+                        <dd>지신화(Ji Xinhua)</dd>
+
+                        <dt>
+
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    상해 교통 대학의총장이며 상해 과학 기술 발전대회에서 1등 상을 받았다. Ji는Unionpay 신용 카드의 암호화 칩과 중앙 은행의 디지털 통화를 위한 표준을 구축하는데 일조했다.
+                </div>
+            </div>
+
+            <div class="teamli">
+                <div class="teamheader">
+                    <img src="imgs/v8.png" alt="" />
+                    <dl>
+                        <dd>궈위항(Guo Yuhang)</dd>
+
+                        <dt>
+
+                        </dt>
+                    </dl>
+                </div>
+                <div class="teaminfo">
+                    디엔롱왕(DIANRONG,중국의 대표 P2P 금융 대출 회사) 설립자이자 씽허쯔번(StarWin Capital) 창립자이며 금융과학기술 영역 투자자이기도 하다. 2012년 전세계 최대의 인터넷 대출 플랫폼 렌딩클럽(Lending Club)의 공동 설립자이자 전 기술 총괄 소울 타이트(Soul Htite)를 초청하여 공동으로 디엔롱왕(DIANRONG)을 설립하였다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--agency-->
+    <div class="agency">
+        <div class="title">투자사</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.fbg.capital/">
+                <img src="imgs/ac3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.linkvc.com/" target="_blank">
+                <img src="imgs/ac1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!-- <a href="javascript:void(0)" target="_blank"><img src="imgs/ac6.png" alt="" class="hvr-bounce-in" /></a> -->
+            <a href="https://www.hashed.com/" target="_blank">
+                <img src="imgs/ac4.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!--<a href="http://inblockchain.com/" target="_blank">
+                <img src="imgs/ac5.png" alt="" class="hvr-bounce-in" />
+            </a>-->
+            <a>
+                <img src="imgs/ac2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <!--<a href="http://rednova.io/" target="_blank">
+                <img src="imgs/ac7.png" alt="" class="hvr-bounce-in" />
+            </a>-->
+            <a href="https://www.du.capital/" target="_blank">
+                <img src="imgs/ac7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.ldcap.com/" target="_blank">
+                <img src="imgs/ac8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://gbic.io/" target="_blank">
+                <img src="imgs/ac9.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">거래소</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.huobi.pro/zh-cn/itc_eth/exchange/" target="_blank">
+                <img src="imgs/bc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.okex.com/spot.html" target="_blank">
+                <img src="imgs/bc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://cex.com/" target="_blank">
+                <img src="imgs/bc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.bibox.com/" target="_blank">
+                <img src="imgs/bc5.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.kucoin.com/#/" target="_blank">
+                <img src="imgs/bc6.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.tokencan.com/index.html" target="_blank">
+                <img src="imgs/bc7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://coinrail.co.kr" target="_blank">
+                <img src="imgs/bc8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://ddex.io/" target="_blank">
+                <img src="imgs/bc9.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.bithumb.com/" target="_blank">
+                <img src="imgs/bc10.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">협력파트너</div>
+        <div class="agencyimglist clearfix">
+            <a href="http://gve.io/" target="_blank">
+                <img src="imgs/cc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.gizwits.com/about-us/detail/" target="_blank">
+                <img src="imgs/cc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.adzar-energy.com/" target="_blank">
+                <img src="imgs/cc4.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.futureconnexions.com/" target="_blank">
+                <img src="imgs/cc6.png" alt="" class="hvr-bounce-in" />
+            </a>
+
+            <a href="https://acuteangle.com/" target="_blank">
+                <img src="imgs/cc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://heronode.io/" target="_blank">
+                <img src="imgs/cc7.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://sentinel-chain.org/" target="_blank">
+                <img src="imgs/cc8.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.guomaitech.com/" target="_blank">
+                <img src="imgs/cc9.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="https://www.schonell.com.sg/" target="_blank">
+                <img src="imgs/cc10.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+
+    <div class="agency">
+        <div class="title">미디어 제휴</div>
+        <div class="agencyimglist clearfix">
+            <a href="https://www.forbes.com/#4fafbde52254">
+                <img src="imgs/dc1.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.jinse.com/" target="_blank">
+                <img src="imgs/dc2.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a>
+                <img src="imgs/dc3.png" alt="" class="hvr-bounce-in" />
+            </a>
+            <a href="http://www.chainfor.com/" target="_blank">
+                <img src="imgs/dc4.png" alt="" class="hvr-bounce-in" />
+            </a>
+        </div>
+    </div>
+    <!--底部-->
+
+    <div class="footer" id="m77">
+        <div class="footercenter">
+            <!--<dl>
+                <dt>Contact us</dt>
+                <dd>Copyright © 2018 IoT Foundation</dd>
+            </dl>-->
+            <dl>
+                <dt>구독하다</dt>
+                <dd>
+                    <input id="subscribeEmail" placeholder="Email@example.com" />
+                </dd>
+                <dd>
+                    <button id="subscribeBtn">구독하다</button>
+                </dd>
+
+            </dl>
+            <div class="flinks">
+                <div>
+                    <a target="_blank" class="weixin">
+                        <img src="imgs/weixin.png" />
+                        <img src="imgs/weixin2.jpg" class="weixin2" />
+                        <div class="ceng" id="ewmceng">
+                            <img src="imgs/weixin2.jpg" class="weixin3" />
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/itc_korea" target="_blank">
+                        <img src="imgs/ll1.png" />
+                    </a>
+                    <a href="https://www.facebook.com/IoTChain/" target="_blank">
+                        <img src="imgs/ll2.png" />
+                    </a>
+                    <!-- <a href="https://iotchaingroup.slack.com/messages/C8K0AB29Z" target="_blank"><img src="imgs/ll3.png" /></a> -->
+                    <a href="https://t.me/IoTChain_Korea" target="_blank">
+                        <img src="imgs/ll4.png" />
+                    </a>
+                    <a href="http://qm.qq.com/cgi-bin/qm/qr?k=CjS_9da0Uj5SfXX8Wm1PIDuL_Nbjzmc3" target="_blank">
+                        <img src="imgs/ll5.png" />
+                    </a>
+                    <a href="https://www.reddit.com/r/iotchain/" target="_blank">
+                        <img src="imgs/ll6.png" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/IoTChainCode" target="_blank">
+                        <img src="imgs/ll7.png" />
+                    </a>
+                    <a href="mailto:support@iotchain.io" target="_blank">
+                        <img src="imgs/ll8.png" />
+                    </a>
+                    <a href="https://medium.com/iot-chain" target="_blank">
+                        <img src="imgs/ll9.png" />
+                    </a>
+                    <a href="https://steemit.com/@iot-chain" target="_blank">
+                        <img src="imgs/ll10.png" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJPaVb7NlxhfCHRkz6yuXBw" target="_blank">
+                        <img src="imgs/ll11.png" />
+                    </a>
+                    <a href="https://open.kakao.com/o/gOZK2gY" target="_blank">
+                        <img src="imgs/ll12.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--地球-->
+    <!--<script src='js/three.min.js'></script>
+    <script src='js/CopyShader.js'></script>
+    <script src='js/EffectComposer.js'></script>
+    <script src='js/FilmPass.js'></script>
+    <script src='js/FilmShader.js'></script>
+    <script src='js/ShaderPass.js'></script>
+    <script src='js/RenderPass.js'></script>
+    <script src="js/index.js"></script>-->
+    <!--球体-->
+</body>
+
+</html>
