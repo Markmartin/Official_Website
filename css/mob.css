@@ -9,6 +9,19 @@ html {
   left: 0;
   width: 100%;
   right: 0;
+  /*.topVideoBox{
+        width: 100%;
+        font-size: 0;
+        margin: 50px auto 0;
+        background: #000;
+       .topVideo{
+            width: 100%;
+            padding-bottom: 45%;
+            margin: 0 auto;
+            background-image: url('../imgs/mainnet_launch.jpg');
+            background-size: 100% 100%;
+       }
+    }*/
   /**.logo_info {
         top: 130px;
         width: 90%;
@@ -74,18 +87,33 @@ html {
         }
     }**/
 }
-.headervideo .topVideoBox {
-  width: 100%;
-  font-size: 0;
+.headervideo .topBox {
   margin: 50px auto 0;
-  background: #000;
 }
-.headervideo .topVideoBox .topVideo {
-  width: 100%;
-  padding-bottom: 45%;
-  margin: 0 auto;
-  background-image: url('../imgs/mainnet_launch.jpg');
-  background-size: 100% 100%;
+.headervideo .topBox .topScrollBox .topScrollLiContentBox .topScrollBox1 .topScrollReadMore {
+  padding: 8px 15px;
+  font-size: 13px;
+  margin-top: 14px;
+}
+.headervideo .topBox .topScrollBox .topScrollLiContentBox .topScrollBox2 .topScrollBtnBox {
+  margin-top: 20px;
+  padding-left: 10%;
+}
+.headervideo .topBox .topScrollBox .topScrollLiContentBox .topScrollBox2 .topScrollBtnBox .topScrollSubmit {
+  font-size: 12px;
+  padding: 8px 8px;
+}
+.headervideo .topBox .topScrollBox .topScrollLiContentBox .topScrollBox2 .topScrollBtnBox .topScrollReadMore {
+  font-size: 12px;
+  padding: 8px 8px;
+  margin-left: 10px;
+}
+.headervideo .topBox .scrollBottomBox {
+  height: 20px;
+}
+.headervideo .topBox .scrollBottomBox .scrollPointBtn .scrollPoint {
+  width: 4px;
+  height: 4px;
 }
 .headervideo canvas {
   margin-left: 100px;

@@ -218,7 +218,6 @@ html {
         }
     }
 }
-
 .headervideo {
     position: relative;
     clear: both;
@@ -226,21 +225,148 @@ html {
     overflow: hidden;
     width: 100%;
     background: #000;
+    .topBox{
+        position: relative;
+        width: 100%;
+        margin: 75px auto 0;
+        //white-space: nowrap;
+        overflow: hidden;
+        .topScrollBox{
+            position: absolute;
+            left:0;
+            top:0;
+            overflow: hidden;
+            .topScrollLiContentBox{
+                position: relative;
+                float: left;
+                .topScrollBox1{
+                    position: relative;
+                    background-image: url('../imgs/bg1.png');
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .topScrollTextImage{
+                        width:56%;
+                        margin: 25% auto 0;
+                    }
+                    .topScrollText{
+                        width: 40%;
+                        padding-top:15%;
+                        padding-left: 10%;
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    .topScrollReadMore{
+                        padding: 10px 20px;
+                        text-align: center;
+                        color: white;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        background-color: #2098D1;
+                        margin-top: 16px;
+                    }
+                }
+                .topScrollBox2{
+                    position: relative;
+                    background-image: url('../imgs/bg2.jpg');
+                   
+                    .topScrollTextImage{
+                        width:46%;
+                        padding-top:15%;
+                        padding-left: 10%;
+                    }
+                    .topScrollText{
+                        width: 40%;
+                        margin-top:15%;
+                        margin-left: 10%;
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    .topScrollBtnBox{
+                        margin-top: 20px;
+                        padding-left: 10%;
+                        .topScrollSubmit{
+                            padding: 10px 10px;
+                            text-align: center;
+                            color: white;
+                            font-size: 14px;
+                            border-radius: 5px;
+                            background-color: #000;
+                        }
+                        .topScrollReadMore{
+                            padding: 10px 10px;
+                            text-align: center;
+                            color: #000;
+                            font-size: 14px;
+                            border-radius: 5px;
+                            background-color: white;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .scrollBottomBox{
+            position: absolute;
+            bottom: 0;
+            margin-left:-30px ;
+            height: 40px;
+            width: 60px;
+            left: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+           
+            .scrollPointBtn{
+                position: relative;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                .scrollPoint{
+                    width: 6px;
+                    height: 6px;
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+                }
+                .scrollPoint.scrollPointSelected{
+                    background-color: #fff;
+                }
+                .scrollPoint.scrollPointUnSelect{
+                    background-color: transparent
+                }
+            }
+
+            .scrollPointBtn:hover {
+               cursor: pointer;
+            }
+            
+        }
+    }
+    
+    
     
      //视频
-     .topVideoBox{
+     /*.topVideoBox{
         width: 100%;
         font-size: 0;
         margin: 75px auto 0;
         background: #000;
-       .topVideo{
+        
+      .topVideo{
             width: 100%;
             padding-bottom: 45%;
             margin: 0 auto;
             background-image: url('../imgs/mainnet_launch.jpg');
             background-size: 100% 100%;
        }
-    }
+    }*/
 
     canvas {
         margin-left: 100px;
