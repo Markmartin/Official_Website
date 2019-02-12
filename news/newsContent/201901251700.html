@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ITC Progress Update 12/01/2019-18/01/2019</title>
+  <title>ITC Progress Update 19/01/2019-25/01/2019</title>
   <style>
     html,
     body,
@@ -893,107 +893,113 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
   <div class="markdown-body">
 
 
-    <h1 id="toc_0" style="margin-bottom: 10px">ITC Progress Update 12/01/2019-18/01/2019</h1>
-    <p style="float:right; color: #959595">Jan 21, 2019</p>
+    <h1 id="toc_0" style="margin-bottom: 10px">ITC Progress Update 19/01/2019-25/01/2019</h1>
+    <p style="float:right; color: #959595">Jan 25, 2019</p>
     <br />
     <br />
 
     <p>
-      <img src="https://iotchain.io/news/newsContentImage/201901221600.jpeg" alt="weekly report" /></p>
+      <img src="https://iotchain.io/news/newsContentImage/201901251700.jpeg" alt="weekly report" /></p>
 
     <h3 id="toc_1" style="font-size: 26px;">DEVELOPMENT</h3>
     <br />
     <h4 id="toc_2" style="font-size: 23px;">Main Net</h4>
     <br />
-    <h5 id="toc_3">[Done] Network layer</h5>
+
+    <h5 id="toc_3">[Done] SDK</h5>
     <br />
-
-
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Reconstruct web service, unify all network message formats (including RPC/Peer)</li>
+      <li>Updated the SDK client to the new message format.</li>
       <br />
-      <li>Support dynamic API management.</li>
-      <br />
-      <li>Idiomatic service definition and composition.</li>
+      <li>Provided the react-native platform for HTTP protocol.</li>
     </ul>
     <br />
-    <h5 id="toc_4">[Done] EVM</h5>
+    <h5 id="toc_4">[Work in Progress] EVM</h5>
     <br />
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Added Create2 command, create address also through the chain data.</li>
+      <li>Implement the Solidity Parser, extract the interface from the contract.</li>
       <br />
-      <li>Added Extcodehash op, verify contract’s bytecode when running the contract.</li>
+      <li>Refactor the interface to the encoding of the bytecode.</li>
       <br />
-      <li>Added cheaper gas consumption of calling Sstore.</li>
-      <br />
-      <li>Refactor virtual machine test suite.</li>
+      <li>Provide the contract interface in SDK, encode the parameters, and interpret the return value.</li>
     </ul>
     <br />
-    <h5 id="toc_5">[Done] DevOps: Kubernetes</h5>
+    <h5 id="toc_5">[Work in Progress] DevOps: Kubernetes</h5>
     <br />
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Written a Helm Chart to test local Kubernetes deployment.</li>
+      <li>The RPC interface is exposed through the service of Kubernetes, and load balancing is based on Client IP.</li>
     </ul>
     <br />
     <h5 id="toc_6">[Done] Wallet App</h5>
     <br />
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Fixed known issues (transaction details section height display error)</li>
+      <li>Added analytics monitoring (Page, interactive link, API and delay and error information)</li>
       <br />
-      <li>Updated the eth wallet Infura node interface version.</li>
-      <br />
-      <li>Rewrite the logic of automatically distributing ITC test coins, adjust the distribution speed according to
-        the number of test coins.</li>
-      <br />
-      <li>Added the log module.</li>
+      <li>Fixed the problem after the Eslint code.</li><br />
+      <li>Fixed the message center clicks into the details page.</li>
     </ul>
     <br />
-    <h4 id="toc_7" style="font-size: 22px;">Light Node</h4>
-    <br />
-    <h5 id="toc_8">[Done]RFID tag products</h5>
+    <h5 id="toc_7">[Work in Progress] Wallet App</h5>
     <br />
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Mobile verification and positioning</li>
-      <br />
-      <li>Label + mobile terminal debugging</li>
+      <li>Android system added analytics packaging problem.</li><br />
+      <li>Test the HTTP service interface function.</li>
     </ul>
     <br />
-    <h5 id="toc_9">[Work in Progress] Data transmission device</h5>
-    <br />
+    <h5 id="toc_8">[Done] Blockchain explorer</h5><br />
+
     <ul style="list-style-type:disc;margin-left: 20px;">
-      <li>Market and product research</li>
+      <li>Block browser server data track, added timed log analysis into library.</li><br />
+      <li>Optimize SQL query.</li><br />
+      <li>Optimize multi-table queries (change synchronous queries to multiple tasks concurrent queries)</li><br />
     </ul>
-    <br />
-    <h3 id="toc_10" style="font-size: 26px;">MARKETING</h3>
-    <br />
-    <p><img src="https://iotchain.io/news/newsContentImage/201901221601.jpeg" alt="weekly report" /><br />
-      Number of token holders 19347 +0.05%</p>
-    <br />
-    <p>Number of transactions 64917 +0.39%</p>
-    <br />
-    <p>(Data source: Etherscan.io)</p>
-    <br />
-    <h3 id="toc_11" style="font-size: 26px;">ANNOUNCEMENT</h3>
-    <br />
+
+    <h4 id="toc_9" style="font-size: 22px;">Light Node</h4><br />
+
+    <h5 id="toc_10">IoT blockchain module</h5><br />
+
+    <ul style="list-style-type:disc;margin-left: 20px;">
+      <li>[Done] Medical cold chain demo (Device part)</li><br />
+      <li>[Work in Progress] Medical cold chain demo (Device part and block chain adjustment)</li><br />
+    </ul>
+
+    <h5 id="toc_11">Data transmission Unit</h5><br />
+
+    <ul style="list-style-type:disc;margin-left: 20px;">
+      <li>[Done] Market and product research</li><br />
+      <li>[Work in Progress]Building the code framework.</li><br />
+      <li>[Work in Progress]Client monitoring program implementation.</li><br />
+    </ul>
+
+    <h3 id="toc_12" style="font-size: 26px;">MARKETING</h3><br />
+
+    <p><img src="https://iotchain.io/news/newsContentImage/201901251701.jpeg" alt="weekly report" /><br /><br />
+      Number of token holders 19340 -0.04%</p><br />
+
+    <p>Number of transactions 65321 +0.62%</p><br />
+
+    <p>(Data source: Etherscan.io)</p><br />
+
+    <h3 id="toc_13" style="font-size: 26px;">ANNOUNCEMENT</h3><br />
     <ul style="list-style-type:disc;margin-left: 20px;">
       <li>IoT Chain node recruitment on Dec 19 2018 (Weds) to Feb 19 2019 (Tues). Read More:
         <a href="https://medium.com/iot-chain/iot-chain-announces-node-recruitment-835a454ed0d5">https://medium.com/iot-chain/iot-chain-announces-node-recruitment-835a454ed0d5</a>
       </li>
       <br />
       <li>On Jan 15th the ITC team held a live AMA on Telegram and answered top questions from the community. Read
-        more: <a href="https://medium.com/iot-chain/recap-of-the-jan-15th-telegram-ama-705379921f6">https://medium.com/iot-chain/recap-of-the-jan-15th-telegram-ama-705379921f6</a></li>
+        more:<a href="https://medium.com/iot-chain/recap-of-the-jan-15th-telegram-ama-705379921f6">https://medium.com/iot-chain/recap-of-the-jan-15th-telegram-ama-705379921f6</a></li>
     </ul>
+
+    <h3 id="toc_16" style="font-size: 26px;">COMMUNITY</h3>
     <br />
-    <h3 id="toc_12" style="font-size: 26px;">COMMUNITY</h3>
+    <p><img src="https://iotchain.io/news/newsContentImage/201901251702.jpeg" alt="weekly report" /><br />
+      WeChat &amp; QQ 6426 -0.66%</p>
     <br />
-    <p><img src="https://iotchain.io/news/newsContentImage/201901221602.jpeg" alt="weekly report" /><br />
-      WeChat &amp; QQ 6469 -0.57%</p>
+    <p>Telegram. 43966 -1.74%</p>
     <br />
-    <p>Telegram. 44775 -2.21%</p>
+    <p>Reddit 9242 +0.16%</p>
     <br />
-    <p>Reddit 9227 +0.17%</p>
-    <br />
-    <p>Twitter 17320 -1.16%</p>
+    <p>Twitter 17488 +0.97%</p>
 
     <br />
     <br />
