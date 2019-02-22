@@ -25,15 +25,22 @@ $(function () {
     });**/
 
 
+   
+
+    //轮播图
     var screenWidth = 0;
     var screenHeight = 0;
 
-    var timer = null;
+    
     var topBox = document.getElementById('topBox');
     var scrollBox = document.getElementById('topScrollBox');
     scrollBox.innerHTML += scrollBox.innerHTML;
     var scrollItems = scrollBox.getElementsByTagName('li');
     var scrollBottomBox = document.getElementById('scrollBottomBox');
+    getScreenWidth()
+    setScroll()
+    /*
+    var timer = null;
     var scrollCount = 0;
     var resizeWindowIng = false;
     var moveTimer = null;
@@ -55,25 +62,7 @@ $(function () {
         startScrollImage()
     }
 
-    window.onresize = function () {
-        resizeWindowIng = true;
-
-        getScreenWidth()
-        setScroll()
-
-        var i = scrollCount % 2;
-        if (i == 0) {
-            //scrollCount = 1;
-            scrollBox.style.left = 0 + 'px';
-        } else {
-            //scrollCount = 2;
-            scrollBox.style.left = -screenWidth + 'px';
-        }
-        setScrollPoint()
-        moveDis = 0;
-
-        resizeWindowIng = false;
-    }
+    
 
     function startScrollImage() {
         clearTimeout(timer)
@@ -89,20 +78,7 @@ $(function () {
     }
 
 
-    function setScroll() {
-        //计算scrollBox的宽为所有scrollItem的宽的和 
-        let topHeight = screenWidth / 1920 * 904 + 'px';
-        let topWidth = screenWidth + 'px';
-        topBox.style.height = topHeight;
-        for (var i = 0; i < scrollItems.length; i++) {
-            let div = scrollItems[i].getElementsByTagName('div')[0];
-            div.style.height = topHeight;
-            div.style.backgroundSize = topWidth;
-            scrollItems[i].style.width = topWidth;
-        }
-        scrollBox.style.width = screenWidth * 4 + 'px';
-        scrollBox.style.height = screenWidth / 1920 * 904 + 'px';
-    }
+    
 
     function scrollImage() {
         if (!resizeWindowIng) {
@@ -162,7 +138,42 @@ $(function () {
         iSpeed = 1;//正左负右
         scrollCount = 2;
         scrollImage()
-    });
+    });*/
+
+    function setScroll() {
+        //计算scrollBox的宽为所有scrollItem的宽的和 
+        let topHeight = screenWidth / 1920 * 904 + 'px';
+        let topWidth = screenWidth + 'px';
+        topBox.style.height = topHeight;
+        for (var i = 0; i < scrollItems.length; i++) {
+            let div = scrollItems[i].getElementsByTagName('div')[0];
+            div.style.height = topHeight;
+            div.style.backgroundSize = topWidth;
+            scrollItems[i].style.width = topWidth;
+        }
+        scrollBox.style.width = screenWidth * 4 + 'px';
+        scrollBox.style.height = screenWidth / 1920 * 904 + 'px';
+    }
+
+    window.onresize = function () {
+        resizeWindowIng = true;
+
+        getScreenWidth()
+        setScroll()
+
+        var i = scrollCount % 2;
+        if (i == 0) {
+            //scrollCount = 1;
+            scrollBox.style.left = 0 + 'px';
+        } else {
+            //scrollCount = 2;
+            scrollBox.style.left = -screenWidth + 'px';
+        }
+        setScrollPoint()
+        moveDis = 0;
+
+        resizeWindowIng = false;
+    }
 
     function getScreenWidth() {
         //获取窗口宽度
